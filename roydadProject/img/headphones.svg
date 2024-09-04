@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.565" height="29.052" viewBox="0 0 32.565 37.052">
+  <g id="headphones" transform="translate(-31)">
+    <g id="Group_3718" data-name="Group 3718" transform="translate(35.342 15.197)">
+      <g id="Group_3717" data-name="Group 3717" transform="translate(0)">
+        <path id="Path_8250" data-name="Path 8250" d="M94.257,210A3.26,3.26,0,0,0,91,213.257v8.829a3.257,3.257,0,0,0,6.513,0v-8.829A3.26,3.26,0,0,0,94.257,210Z" transform="translate(-91 -210)" fill="#dedede"/>
+      </g>
+    </g>
+    <g id="Group_3720" data-name="Group 3720" transform="translate(31 17.539)">
+      <g id="Group_3719" data-name="Group 3719">
+        <path id="Path_8251" data-name="Path 8251" d="M33.171,243.28a5.386,5.386,0,0,1,.092-.914A3.25,3.25,0,0,0,31,245.451v4.487a3.25,3.25,0,0,0,2.264,3.085,5.386,5.386,0,0,1-.092-.914Z" transform="translate(-31 -242.366)" fill="#dedede"/>
+      </g>
+    </g>
+    <g id="Group_3722" data-name="Group 3722" transform="translate(44.026 15.197)">
+      <g id="Group_3721" data-name="Group 3721">
+        <path id="Path_8252" data-name="Path 8252" d="M222.941,210a3.26,3.26,0,0,0-3.257,3.257v8.829a3.26,3.26,0,0,0,3.257,3.257,3.213,3.213,0,0,0,.933-.153,3.25,3.25,0,0,1-3.1,2.324h-3.456a3.257,3.257,0,1,0,0,2.171h3.456a5.434,5.434,0,0,0,5.428-5.428v-11A3.26,3.26,0,0,0,222.941,210Z" transform="translate(-211 -210)" fill="#dedede"/>
+      </g>
+    </g>
+    <g id="Group_3724" data-name="Group 3724" transform="translate(61.302 17.539)">
+      <g id="Group_3723" data-name="Group 3723">
+        <path id="Path_8253" data-name="Path 8253" d="M449.722,242.366a5.391,5.391,0,0,1,.092.914v8.829a5.39,5.39,0,0,1-.092.914,3.25,3.25,0,0,0,2.264-3.085v-4.487A3.25,3.25,0,0,0,449.722,242.366Z" transform="translate(-449.722 -242.366)" fill="#dedede"/>
+      </g>
+    </g>
+    <g id="Group_3726" data-name="Group 3726" transform="translate(31)">
+      <g id="Group_3725" data-name="Group 3725">
+        <path id="Path_8254" data-name="Path 8254" d="M47.283,0A16.3,16.3,0,0,0,31,16.283v.028A5.375,5.375,0,0,1,33.221,15.3a14.095,14.095,0,0,1,28.124,0,5.377,5.377,0,0,1,2.221,1.008v-.028A16.3,16.3,0,0,0,47.283,0Z" transform="translate(-31)" fill="#dedede"/>
+      </g>
+    </g>
+  </g>
+</svg>

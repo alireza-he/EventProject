@@ -1,0 +1,339 @@
+opacity {
+    opacity: 1 !important;
+}
+
+main {
+    position: relative;
+    top: 6rem;
+}
+
+.partMessages {
+    transform: rotate(180deg);
+    overflow-y: scroll;
+    max-height: 75vh;
+    padding: 0 3rem;
+    scrollbar-color: #FF0077 #fff;
+    scrollbar-width: thin;
+}
+
+.partMessages::-webkit-scrollbar {
+    width: 8px !important;
+    background-color: #fff !important;
+}
+
+.partMessages:hover::-webkit-scrollbar-thumb {
+    background-color: #FF0077 !important;
+}
+
+.partMessages::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #fff !important;
+    background-color: #fff !important;
+}
+
+.adminMessage, .userMessage {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem 0 #00000020;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    padding: 0;
+    transform: rotate(180deg);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.parentUserMessage {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.userMessage {
+    align-self: flex-end;
+}
+
+.adminMessage .header, .userMessage .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 5px .75rem 0 #00000020;
+    padding: .5rem 1.5rem;
+}
+
+.adminMessage .avatarAndName, .userMessage .avatarAndName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adminMessage .avatarAndName span, .userMessage .avatarAndName span {
+    font-size: .9rem;
+    font-weight: 600;
+    color: #646464;
+}
+
+.adminMessage .bg-avatar, .userMessage .bg-avatar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.adminMessage .bg-avatar img, .userMessage .bg-avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.adminMessage .DateAndTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.userMessage .DateAndTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.adminMessage .DateAndTime, .userMessage .DateAndTime {
+    font-size: .7rem;
+    font-weight: 600;
+    font-family: IRANSansFaNum, sans-serif;
+    color: #ABABAB;
+}
+
+.adminMessage .DateAndTime span:nth-of-type(1), .userMessage .DateAndTime span:nth-of-type(1) {
+    margin-bottom: .35rem;
+}
+
+.adminMessage p, .userMessage p {
+    padding: 1.25rem 2rem;
+    font-size: 1rem;
+    color: #919191;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+.row-btn-sendANewTicket {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F5F6FF;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.btn-sendANewTicket {
+    bottom: 3rem;
+    right: 3rem;
+    background-color: #FF0077;
+    color: #fff !important;
+    padding: .375rem 1.75rem;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+}
+
+#sendTicket .modal-dialog {
+    max-width: 40%;
+}
+
+#sendTicket .modal-content {
+    border-radius: 1rem;
+}
+
+#sendTicket .modal-body {
+    background-color: #EFEFEF;
+    box-shadow: 0 0 .5rem 0 #000000;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+}
+
+#sendTicket .modal-header {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+#sendTicket .modal-header .avatarAndName {
+    display: flex;
+    align-items: center;
+}
+
+#sendTicket .modal-header .avatarAndName .bg-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+#sendTicket .modal-header .avatarAndName span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #646464;
+}
+
+#sendTicket .input-file {
+    border: none;
+    outline: none;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+    background-color: #FF0077;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.input-file::-webkit-file-upload-button {
+    opacity: 0;
+}
+
+.input-file::before {
+    content: 'ارسال فایل';
+    padding: .75rem 1.5rem .75rem 1rem;
+    outline: none;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+#sendTicket .subject {
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#sendTicket .subject span:nth-of-type(1) {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #505050;
+    margin-left: .5rem;
+}
+
+#sendTicket .subject span:nth-of-type(2) {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #828282;
+}
+
+#sendTicket form {
+    text-align: center;
+}
+
+#sendTicket form textarea, form input {
+    background-color: #fff !important;
+    border: none !important;
+    border-radius: .75rem !important;
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+    padding: 1.5rem 2rem !important;
+    height: auto !important;
+}
+
+#sendTicket form textarea {
+    font-size: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+#sendTicket form textarea::placeholder {
+    color: #ACACAC !important;
+}
+
+#sendTicket #codeNumber::placeholder {
+    color: #ACACAC !important;
+}
+
+#sendTicket form input {
+    height: 3.5rem !important;
+    margin: 0 0 1.5rem 0 !important;
+}
+
+#sendTicket form #readonly {
+    position: relative;
+    height: 3.5rem !important;
+    font-size: 1.5rem !important;
+    outline: none !important;
+    color: #ACACAC !important;
+    padding-right: 4rem !important;
+    font-family: IRANSansFaNum, sans-serif;
+}
+
+#sendTicket form #Refresh {
+    position: absolute;
+    top: .8rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+#sendTicket .btn-senTicket {
+    background-color: #FF0077;
+    color: #fff !important;
+    padding: .375rem 2rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+    main {
+        top: 8rem;
+    }
+
+    .row-btn-sendANewTicket {
+        justify-content: center;
+    }
+
+    .partMessages {
+        max-height: 70vh;
+    }
+
+    .adminMessage, .userMessage {
+        width: 100%;
+    }
+
+    #sendTicket .modal-dialog {
+        max-width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+

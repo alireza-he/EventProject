@@ -1,0 +1,376 @@
+#YourWallet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+#partRight .informationForYou {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: start;
+}
+
+#partRight div:nth-of-type(1) .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.circle {
+    background-color: #FF0077;
+    width: 10px;
+    min-width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: .5rem;
+}
+
+#partRight div:nth-of-type(1) .title h1 {
+    color: #343434;
+    font-size: 1.5rem;
+}
+
+#partRight .inventoryPart, #partRight .increaseCreditPart {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#partRight .inventoryPart label, .increaseCreditPart label {
+    color: #707070;
+    font-size: 1.25rem;
+    margin: 0 1rem;
+}
+
+#partRight .inventoryPart span:nth-of-type(1) {
+    background-color: #F5F5F5;
+    border-radius: 2.5rem;
+    padding: .5rem 2rem;
+    color: #343434;
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+
+#partRight .inventoryPart span:nth-of-type(2) {
+    color: #707070;
+    font-size: 1.25rem;
+    margin-left: 1rem;
+}
+
+#partRight .increaseCreditPart .btn-chargeWallet {
+    background-color: #FF0077;
+    color: #fff;
+    border-radius: 2.5rem;
+}
+
+.increaseCreditPart input {
+    background-color: #F5F5F5;
+    border-radius: 2.5rem;
+    margin-left: 2rem;
+    border: none;
+    width: 12rem;
+    text-align: center;
+    padding: 1.4rem 0;
+}
+
+.increaseCreditPart input:focus {
+    background-color: #F5F5F5;
+    color: #343434 !important;
+}
+
+#listOfTransactions table .toman {
+    font-size: 10px;
+}
+
+#listOfTransactions .table-responsive {
+    border-radius: 1rem;
+    box-shadow: 0 3px 0.75rem 0 #00000020;
+    margin-bottom: 2rem;
+}
+
+#listOfTransactions .table {
+    margin-bottom: 0;
+}
+
+#listOfTransactions table thead {
+    background-color: #FF0077;
+    color: #fff;
+}
+
+#listOfTransactions table thead th {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#listOfTransactions table tbody {
+    background-color: #fff;
+    font-family: IranSansFaNum, sans-serif;
+    padding: 1rem 0;
+}
+
+#listOfTransactions table tbody td {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    color: #919191;
+}
+
+#listOfTransactions .table-striped tbody tr:nth-of-type(odd) td:nth-of-type(4) {
+    color: #00E14D;
+}
+
+#listOfTransactions .table-striped tbody tr:nth-of-type(even) td:nth-of-type(4) {
+    color: #FD1D1D;
+}
+
+
+/*                 cart page styles                   */
+
+#YourCart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 3.5rem 1.5rem 2rem;
+}
+
+#YourCart .text {
+    display: flex;
+    align-items: center;
+}
+
+#YourCart .text label {
+    color: #343434;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-left: 1.5rem;
+}
+
+#YourCart .text span:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 7rem;
+    padding: 5px 0;
+    background-color: #F5F5F5;
+    border-radius: 2.5rem;
+    color: #343434;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+#YourCart .text span:nth-of-type(2) {
+    color: #707070;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#YourCart .btn-BuyAndPay {
+    display: flex;
+    align-self: flex-end;
+    font-weight: 500;
+    color: #343434;
+}
+
+#yourOfTickets .yourTicket {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#yourOfTickets .bg-box-hover {
+    position: absolute;
+    background-color: #00000080;
+    width: 15.75rem;
+    height: 85%;
+    z-index: 1;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    opacity: 0;
+}
+
+#yourOfTickets .yourTicket:hover .bg-box-hover {
+    opacity: 1;
+}
+
+#yourOfTickets .bg-box-hover button {
+    background-color: #FF0077;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .5rem;
+}
+
+#yourOfTickets .bg-box-hover button a svg, #yourOfTickets .bg-box-hover button a svg path {
+    color: #fff;
+    fill: #fff;
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+#yourOfTickets .bg-box-hover button:nth-of-type(3) a svg {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+#yourOfTickets .bg-yourTicket {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 16rem;
+}
+
+#yourOfTickets .content-yourTicket {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.85rem .9rem 0 0;
+}
+
+#yourOfTickets .photoAndSeatInformation .bg-photo {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 12rem;
+    max-height: 13rem;
+    height: 15rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+#yourOfTickets .photoAndSeatInformation .bg-photo img {
+    width: auto;
+    height: 100%;
+
+}
+
+#yourOfTickets .seatInformation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E5E5E580;
+    padding: .4rem .6rem;
+    border-radius: 0.5rem;
+    font-family: IranSansFaNum, sans-serif;
+    font-weight: 600;
+}
+
+#yourOfTickets .seat, #yourOfTickets .seatRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#yourOfTickets .seat label, #yourOfTickets .seatRow label {
+    color: #ACACAC;
+    font-size: 10px;
+    margin-left: .3rem;
+    margin-bottom: 0;
+}
+
+#yourOfTickets .seat span, #yourOfTickets .seatRow span {
+    color: #505050;
+    font-size: 1.1rem;
+}
+
+#yourOfTickets .bg-information {
+    background-image: url("../img/bg-information-yourTicket.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14rem;
+    max-width: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+#yourOfTickets .bg-information h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #505050;
+}
+
+#yourOfTickets .cinemaAndHall {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: IranSansFaNum, sans-serif;
+    color: #ACACAC;
+    width: 100%;
+}
+
+#yourOfTickets .cinemaAndHall div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@media (max-width: 576px) {
+    #YourCart {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #partRight .informationForYou {
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+
+    #YourCart .btn-BuyAndPay {
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #partRight .inventoryPart, #partRight .increaseCreditPart {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .inventoryPart label, .inventoryPart span {
+        margin: 0 0 1rem .5rem !important;
+    }
+
+    .increaseCreditPart label, .increaseCreditPart .btn-chargeWallet, .increaseCreditPart input {
+        margin: 0 0 1rem .5rem;
+    }
+
+    #listOfTransactions table tbody td {
+        min-width: 5rem;
+    }
+
+    #listOfTransactions table tbody td:nth-of-type(4) {
+        min-width: 12rem;
+    }
+}
+

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>رویداد</title>
+    <link rel="icon" href="img/bime.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chatWidthSupport.css">
+</head>
+<body>
+
+<div>
+    <header id="header">
+        <div class="container">
+            <div>
+                <div class="row m-0 justify-content-between align-items-center">
+                    <div class="d-lg-none d-flex justify-content-between align-items-center w-100 border-bottom pb-2 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="bars-icon" width="22.137" height="15.758"
+                             viewBox="0 0 22.137 15.758">
+                            <g id="Icon_feather-menu" data-name="Icon feather-menu" transform="translate(-3 -7.5)">
+                                <path id="Path_1" data-name="Path 1" d="M4.5,18H23.637" transform="translate(0 -2.621)"
+                                      fill="none" stroke="#dedede" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-width="3"></path>
+                                <path id="Path_2" data-name="Path 2" d="M4.5,9H23.637" fill="none" stroke="#dedede"
+                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                                <path id="Path_3" data-name="Path 3" d="M4.5,27H23.637" transform="translate(0 -5.242)"
+                                      fill="none" stroke="#dedede" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-width="3"></path>
+                            </g>
+                        </svg>
+                        <a href="index.html">
+                            <div class="siteLogo d-flex align-self-center">
+                                <!--                <img src="" alt="لوگوی سایت">-->
+                                <span>Logo Site</span>
+                            </div>
+                        </a>
+                        <div class="d-flex align-items-center">
+                            <div class="avatar">
+                                <img src="img/user-1.png" alt="کاربر" class="rounded-circle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-flex">
+                        <a href="#" class="btn btn-HoldingAnEvent">
+                            <span>برگزاری رویداد</span>
+                        </a>
+                    </div>
+                    <div class="avatar d-none d-lg-block">
+                        <img src="img/user-1.png" alt="کاربر" class="rounded-circle">
+                    </div>
+                    <div class="list d-none d-lg-flex justify-content-around align-items-center">
+                        <a href="index.html">
+                            <img src="img/home-run.svg" alt="خانه"/>
+                            <span>خانه</span>
+                        </a>
+                        <a href="wallet.html">
+                            <img src="img/wallet.svg" alt="کیف پول"/>
+                            <span>کیف پول</span>
+                        </a>
+                        <a href="Cart.html">
+                            <img src="img/Union-9.svg" alt="سبد خرید"/>
+                            <span>سبد خرید</span>
+                        </a>
+                        <a href="messages.html">
+                            <img src="img/bell.svg" alt="پیام ها"/>
+                            <span>پیام ها</span>
+                        </a>
+                        <a href="support.html">
+                            <img src="img/headphones.svg" alt="پشتیبانی"/>
+                            <span>پشتیبانی</span>
+                        </a>
+                    </div>
+                    <div class="d-lg-none d-flex justify-content-between align-items-center w-100">
+                        <div class="col bg-input-search bg-input-search-responsive mr-lg-3">
+                            <div class="input-group">
+                                <input type="text"
+                                       class="form-control input-search"
+                                       placeholder="جستجو در سایت"
+                                       aria-label="Text input with dropdown button">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="22.305" height="22"
+                                     viewBox="0 0 28.305 28">
+                                    <g id="Search" transform="translate(0.497)">
+                                        <rect id="Rectangle_176" data-name="Rectangle 176" width="28" height="28"
+                                              transform="translate(-0.497)" fill="none"></rect>
+                                        <path id="Path_99" data-name="Path 99"
+                                              d="M0,25.2l5.735-5.735a11.9,11.9,0,0,1-2.433-7.3,12.166,12.166,0,0,1,24.332,0A12.091,12.091,0,0,1,15.468,24.332a11.9,11.9,0,0,1-7.3-2.433L2.433,27.634ZM24.158,12.166a8.605,8.605,0,0,0-8.69-8.69,8.605,8.605,0,0,0-8.69,8.69,8.605,8.605,0,0,0,8.69,8.69A8.605,8.605,0,0,0,24.158,12.166Z"
+                                              transform="translate(0.174 0)" fill="#f07"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-4 d-lg-none mx-auto">
+                            <a href="#" class="btn btn-HoldingAnEvent">
+                                <span>برگزاری رویداد</span>
+                            </a>
+                        </div>
+                        <div class="list d-flex justify-content-around align-items-center">
+                            <a href="wallet.html">
+                                <img src="img/wallet.svg" alt="کیف پول"/>
+                            </a>
+                            <a href="Cart.html">
+                                <img src="img/Union-9.svg" alt="سبد خرید"/>
+                            </a>
+                            <a href="messages.html">
+                                <img src="img/bell.svg" alt="پیام ها"/>
+                            </a>
+                            <a href="support.html">
+                                <img src="img/headphones.svg" alt="پشتیبانی"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block col bg-input-search mx-xl-5 ml-lg-3">
+                        <div class="input-group">
+                            <!--<div class="input-group-prepend">
+                                <div class="btn pr-0 searchSelectBox" type="button">
+                                    <select>
+                                        <option>همه رویداد ها</option>
+                                        <option>رویداد 1</option>
+                                        <option>رویداد 2</option>
+                                        <option>رویداد 3</option>
+                                    </select>
+                                    <img src="img/row-down.svg" class="mr-3 pl-2" alt="کلیک کنید">
+                                </div>
+                            </div>-->
+                            <input type="text"
+                                   class="form-control input-search"
+                                   placeholder="جستجو در سایت"
+                                   aria-label="Text input with dropdown button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="22.305" height="22"
+                                 viewBox="0 0 28.305 28">
+                                <g id="Search" transform="translate(0.497)">
+                                    <rect id="Rectangle_176" data-name="Rectangle 176" width="28" height="28"
+                                          transform="translate(-0.497)" fill="none"></rect>
+                                    <path id="Path_99" data-name="Path 99"
+                                          d="M0,25.2l5.735-5.735a11.9,11.9,0,0,1-2.433-7.3,12.166,12.166,0,0,1,24.332,0A12.091,12.091,0,0,1,15.468,24.332a11.9,11.9,0,0,1-7.3-2.433L2.433,27.634ZM24.158,12.166a8.605,8.605,0,0,0-8.69-8.69,8.605,8.605,0,0,0-8.69,8.69,8.605,8.605,0,0,0,8.69,8.69A8.605,8.605,0,0,0,24.158,12.166Z"
+                                          transform="translate(0.174 0)" fill="#f07"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="siteLogo mr-auto d-none d-lg-flex align-self-center">
+                        <!--                <img src="" alt="لوگوی سایت">-->
+                        <span>Logo Site</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav id="nav">
+        <div id="scroll">
+            <ul class="list-unstyled">
+                <li class="d-flex justify-content-end align-items-start px-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="nav-close-icon" width="13.426" height="13.423"
+                         viewBox="0 0 13.426 13.423">
+                        <path id="Icon-close"
+                              d="M19.589,18l4.8-4.8A1.124,1.124,0,0,0,22.8,11.616l-4.8,4.8-4.8-4.8A1.124,1.124,0,1,0,11.616,13.2l4.8,4.8-4.8,4.8A1.124,1.124,0,0,0,13.2,24.384l4.8-4.8,4.8,4.8A1.124,1.124,0,1,0,24.384,22.8Z"
+                              transform="translate(-11.285 -11.289)"></path>
+                    </svg>
+                </li>
+
+                <li class="d-flex justify-content-center align-items-start mb-4">
+                    <a href="#">
+                        <div id="logo">
+                            <img src="img/user-1.png" alt="لوگوی شرکت">
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="d-flex justify-content-start align-items-center w-100 activeLink">
+                                    <span class="icon-nav">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20"
+                                             viewBox="0 0 25.632 25.635">
+                                            <path id="home-run"
+                                                  d="M24.943,11.149l0,0L14.485.691a2.359,2.359,0,0,0-3.338,0L.7,11.142l-.011.011a2.359,2.359,0,0,0,1.57,4.021q.036,0,.073,0h.417v7.7a2.765,2.765,0,0,0,2.762,2.762H9.6a.751.751,0,0,0,.751-.751V18.85a1.261,1.261,0,0,1,1.26-1.26h2.413a1.261,1.261,0,0,1,1.26,1.26v6.033a.751.751,0,0,0,.751.751h4.091a2.765,2.765,0,0,0,2.762-2.762v-7.7h.386a2.36,2.36,0,0,0,1.67-4.028Zm0,0"
+                                                  transform="translate(0 0.001)" fill="#dedede">
+                                            </path>
+                                        </svg>
+                                    </span>
+                        <span class="title">صفحه اصلی</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="events.html" class="d-flex justify-content-between align-items-center w-100">
+                        <button class="btn" data-toggle="collapse" data-target="#collapse-nav-1">
+                                        <span>
+                                            <span class="icon-nav">
+                                                <svg id="Calendar" xmlns="http://www.w3.org/2000/svg" width="23"
+                                                     height="23" viewBox="0 0 23 23">
+                                                    <rect id="Rectangle_557" data-name="Rectangle 557" width="23"
+                                                          height="23" fill="none">
+                                                    </rect>
+                                                      <path id="Path_149" data-name="Path 149"
+                                                            d="M2.875,7.188V20.125h17.25V7.188ZM18.688,2.875h2.875A1.358,1.358,0,0,1,23,4.313v17.25A1.358,1.358,0,0,1,21.563,23H1.438A1.358,1.358,0,0,1,0,21.563V4.313A1.358,1.358,0,0,1,1.438,2.875H4.313V1.438A1.358,1.358,0,0,1,5.75,0,1.358,1.358,0,0,1,7.188,1.438V2.875h8.625V1.438a1.438,1.438,0,0,1,2.875,0ZM17.25,17.25H14.375V14.375H17.25Zm-4.312,0H10.063V14.375h2.875Zm4.313-4.312H14.375V10.063H17.25Zm-4.312,0H10.063V10.063h2.875ZM8.625,17.25H5.75V14.375H8.625Z"
+                                                            fill="#dedede">
+
+                                                      </path>
+                                                </svg>
+
+                                            </span>
+                                            <span class="title">رویداد ها</span>
+                                        </span>
+                            <i class="fas fa-angle-down"></i>
+                        </button>
+                    </a>
+                    <div class="collapse category-items" id="collapse-nav-1" data-parent="#categories">
+                        <div class="d-flex flex-column">
+                            <a href="theater.html" class="d-flex align-items-center w-100">
+                                <div>
+                                    <i class="fas fa-theater-masks"></i>
+                                    <span class="title">تئاتر</span>
+                                </div>
+                            </a>
+                            <a href="#" class="d-flex align-items-center w-100">
+                                <div>
+                                    <i class="fas fa-music"></i>
+                                    <span class="title">کنسرت</span>
+                                </div>
+                            </a>
+                            <a href="#" class="d-flex align-items-center w-100">
+                                <div>
+                                    <i class="fas fa-volleyball-ball"></i>
+                                    <span class="title">ورزشی</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#" class="d-flex justify-content-between align-items-center w-100">
+                        <button class="btn" data-toggle="collapse" data-target="#collapse-nav-2">
+                                        <span>
+                                            <span class="icon-nav">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20.856"
+                                                     viewBox="0 0 24 20.856">
+                                                      <g id="video-camera" transform="translate(0)">
+                                                        <g id="Group_3736" data-name="Group 3736"
+                                                           transform="translate(0)">
+                                                          <g id="Group_3735" data-name="Group 3735"
+                                                             transform="translate(0 0)">
+                                                            <path id="Path_8265" data-name="Path 8265"
+                                                                  d="M254.948,164.734a.979.979,0,0,1,1.356-.346l3.288,1.9.836.49v4.558l-.779.462c-.029,0-.029.029-.058.029l-3.231,1.875a.888.888,0,0,1-.548.173.973.973,0,0,1-.981-.981v-3.865l-.029-3.808A.755.755,0,0,1,254.948,164.734Z"
+                                                                  transform="translate(-254.804 -153.974)"
+                                                                  fill="#dedede"></path>
+                                                            <path id="Path_8266" data-name="Path 8266"
+                                                                  d="M4.644,31.09a4.644,4.644,0,1,1,4.644-4.644A4.641,4.641,0,0,1,4.644,31.09Zm0-6.548a1.9,1.9,0,1,0,1.9,1.9A1.866,1.866,0,0,0,4.644,24.542Z"
+                                                                  transform="translate(14.711 -21.802)"
+                                                                  fill="#dedede"></path>
+                                                            <path id="Path_8267" data-name="Path 8267"
+                                                                  d="M15.558,150.49a5.528,5.528,0,0,0,2.481.606,5.394,5.394,0,0,0,3-.894h3.288a5.394,5.394,0,0,0,3,.894,5.175,5.175,0,0,0,2.481-.606,2.255,2.255,0,0,1,1.125,1.933v7.038A2.345,2.345,0,0,1,28.6,161.8H16.741a2.345,2.345,0,0,1-2.337-2.337v-7.038A2.346,2.346,0,0,1,15.558,150.49Z"
+                                                                  transform="translate(-7.971 -140.942)"
+                                                                  fill="#dedede"></path>
+                                                            <path id="Path_8268" data-name="Path 8268"
+                                                                  d="M133.448,31.09a4.644,4.644,0,1,1,4.644-4.644A4.641,4.641,0,0,1,133.448,31.09Zm0-6.548a1.9,1.9,0,1,0,1.9,1.9A1.9,1.9,0,0,0,133.448,24.542Z"
+                                                                  transform="translate(-123.381 -21.802)"
+                                                                  fill="#dedede"></path>
+                                                          </g>
+                                                        </g>
+                                                      </g>
+                                                    </svg>
+                                            </span>
+                                            <span class="title">سینما ها</span>
+                                        </span>
+                            <i class="fas fa-angle-down"></i>
+                        </button>
+                    </a>
+                    <div class="collapse category-items" id="collapse-nav-2" data-parent="#categories">
+                        <div class="d-flex flex-column">
+                            <a href="#" class="d-flex align-items-center w-100">
+                                <div>
+                                    <i class="fas fa-theater-masks"></i>
+                                    <span class="title">تئاتر</span>
+                                </div>
+                            </a>
+                            <a href="#" class="d-flex align-items-center w-100">
+                                <div>
+                                    <i class="fas fa-music"></i>
+                                    <span class="title">کنسرت</span>
+                                </div>
+                            </a>
+                            <a href="#" class="d-flex align-items-center w-100">
+                                <div>
+                                    <i class="fas fa-volleyball-ball"></i>
+                                    <span class="title">ورزشی</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="restaurants.html"
+                       class="d-flex justify-content-between align-items-center w-100">
+                        <button class="btn" data-toggle="collapse" data-target="#collapse-nav-3">
+                                        <span>
+                                        <span class="icon-nav">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19.48" height="25.417"
+                                                     viewBox="0 0 19.48 25.417">
+                                                  <g id="restaurant" transform="translate(-91.261 1)">
+                                                    <g id="Group_3732" data-name="Group 3732"
+                                                       transform="translate(91.261 -1)">
+                                                      <g id="Group_3731" data-name="Group 3731">
+                                                        <path id="Path_8263" data-name="Path 8263"
+                                                              d="M100.948,6.858,99.827.451A.594.594,0,0,0,99.218,0H99.2A.581.581,0,0,0,98.6.485l-.541,5.563c-.033.343-.743.343-.777,0L96.746.485a.632.632,0,0,0-1.23,0l-.541,5.563c-.033.343-.743.343-.777,0L93.66.485a.585.585,0,0,0-.6-.485h-.02a.594.594,0,0,0-.61.451l-1.12,6.407a4.073,4.073,0,0,0,2.86,4.423L93.223,22.74A2.305,2.305,0,0,0,94,24.621a3.161,3.161,0,0,0,2.132.8h0a3.168,3.168,0,0,0,2.133-.8,2.305,2.305,0,0,0,.774-1.881l-.953-11.459A4.073,4.073,0,0,0,100.948,6.858Z"
+                                                              transform="translate(-91.261)" fill="#dedede"></path>
+                                                      </g>
+                                                    </g>
+                                                    <g id="Group_3734" data-name="Group 3734"
+                                                       transform="translate(104.816 0.001)">
+                                                      <g id="Group_3733" data-name="Group 3733">
+                                                        <path id="Path_8264" data-name="Path 8264"
+                                                              d="M319.768.11a.677.677,0,0,0-.539-.064c-.051.015-5.135,1.619-5.135,6.583,0,3.574,1.355,5.379,2.117,6.111l-.758.651a.48.48,0,0,0-.171.309l-.937,8.048a2.232,2.232,0,0,0,.719,1.881,3.083,3.083,0,0,0,2.111.8,2.67,2.67,0,0,0,2.844-2.442V.525A.486.486,0,0,0,319.768.11Z"
+                                                              transform="translate(-314.093 -0.017)"
+                                                              fill="#dedede"></path>
+                                                      </g>
+                                                    </g>
+                                                  </g>
+                                                </svg>
+                                            </span>
+                                        <span class="title">رستوران ها</span>
+                                    </span>
+                            <i class="fas fa-angle-down"></i>
+                        </button>
+                    </a>
+                    <div class="collapse category-items" id="collapse-nav-3" data-parent="#categories">
+                        <div class="d-flex flex-column">
+                            <a href="#" class="d-flex align-items-center w-100">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24.001"
+                                         viewBox="0 0 24 24.001">
+                                        <g id="coffee-cup" transform="translate(0 0.001)">
+                                            <path id="Path_8751" data-name="Path 8751"
+                                                  d="M7.757,6a.75.75,0,0,1-.492-1.316A.606.606,0,0,0,7.5,4.167a.693.693,0,0,0-.372-.518A2.172,2.172,0,0,1,6.009,1.975,2.1,2.1,0,0,1,6.751.184a.75.75,0,1,1,.984,1.132.606.606,0,0,0-.232.517.694.694,0,0,0,.373.518A2.173,2.173,0,0,1,8.991,4.025a2.1,2.1,0,0,1-.742,1.792A.755.755,0,0,1,7.757,6Z"
+                                                  fill="#ffffff"></path>
+                                            <path id="Path_8752" data-name="Path 8752"
+                                                  d="M12.757,6a.75.75,0,0,1-.492-1.316.606.606,0,0,0,.232-.517.694.694,0,0,0-.373-.518,2.173,2.173,0,0,1-1.115-1.674A2.1,2.1,0,0,1,11.751.183a.75.75,0,0,1,.983,1.133.606.606,0,0,0-.232.517.694.694,0,0,0,.373.518A2.173,2.173,0,0,1,13.99,4.025a2.1,2.1,0,0,1-.742,1.792A.751.751,0,0,1,12.757,6Z"
+                                                  fill="#ffffff"></path>
+                                            <path id="Path_8753" data-name="Path 8753"
+                                                  d="M17.25,24H2.75A2.752,2.752,0,0,1,0,21.25v-1a.75.75,0,0,1,.75-.75h18.5a.75.75,0,0,1,.75.75v1A2.752,2.752,0,0,1,17.25,24Z"
+                                                  fill="#ffffff"></path>
+                                            <path id="Path_8754" data-name="Path 8754"
+                                                  d="M3.792,18.5H16.219a8.872,8.872,0,0,0,1.435-1.767.768.768,0,0,0,.07-.1A9.046,9.046,0,0,0,19,12V8.25a.75.75,0,0,0-.75-.75H1.75A.75.75,0,0,0,1,8.25V12A8.969,8.969,0,0,0,3.792,18.5Z"
+                                                  fill="#ffffff"></path>
+                                            <path id="Path_8755" data-name="Path 8755"
+                                                  d="M20,9.25v2a2,2,0,0,1,2,2,2,2,0,0,1-2,2h-.563a9.99,9.99,0,0,1-.854,1.9c-.021.036-.046.069-.07.1H20a4,4,0,0,0,4-4A4,4,0,0,0,20,9.25Z"
+                                                  fill="#ffffff"></path>
+                                        </g>
+                                    </svg>
+                                    <span class="title">کافی شاپ</span>
+                                </div>
+                            </a>
+                            <a href="#" class="d-flex align-items-center w-100">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17.238"
+                                         viewBox="0 0 24 17.238">
+                                        <g id="dinner" transform="translate(0 -72.125)">
+                                            <g id="Group_3835" data-name="Group 3835"
+                                               transform="translate(0 86.812)">
+                                                <g id="Group_3834" data-name="Group 3834">
+                                                    <rect id="Rectangle_4848" data-name="Rectangle 4848"
+                                                          width="24" height="2.552" fill="#dedede"></rect>
+                                                </g>
+                                            </g>
+                                            <g id="Group_3837" data-name="Group 3837"
+                                               transform="translate(1.063 72.125)">
+                                                <g id="Group_3836" data-name="Group 3836">
+                                                    <path id="Path_8756" data-name="Path 8756"
+                                                          d="M41.351,77.895a10.858,10.858,0,0,0-6.194-3.1,1.782,1.782,0,1,0-3.083,0,10.942,10.942,0,0,0-9.4,10.588H44.552A10.865,10.865,0,0,0,41.351,77.895Z"
+                                                          transform="translate(-22.678 -72.125)"
+                                                          fill="#dedede"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span class="title">رستوران سنتی</span>
+                                </div>
+                            </a>
+                            <a href="#" class="d-flex align-items-center w-100">
+                                <div>
+                                    <i class="fas fa-pizza-slice"></i>
+                                    <span class="title">رستوران ایتالیایی</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#" class="d-flex justify-content-between align-items-center w-100">
+                        <button class="btn" data-toggle="collapse" data-target="#collapse-nav-4">
+                                        <span>
+                                            <span class="icon-nav">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="23.832" height="25.812"
+                                                     viewBox="0 0 23.832 25.812">
+                                                    <path id="big-ferris-wheel"
+                                                          d="M25.889,11.916a2.172,2.172,0,0,0-1.656-2.107,10.345,10.345,0,0,0-1.517-3.655,2.169,2.169,0,0,0-2.985-2.979,10.344,10.344,0,0,0-3.65-1.511,2.168,2.168,0,0,0-4.218,0,10.344,10.344,0,0,0-3.65,1.511,2.168,2.168,0,0,0-2.984,2.98A10.418,10.418,0,0,0,3.723,9.806a2.169,2.169,0,0,0,0,4.218,10.415,10.415,0,0,0,1.506,3.664A2.167,2.167,0,0,0,8.2,20.666a10.42,10.42,0,0,0,.946.555L7.775,24.368H5.391a.722.722,0,0,0,0,1.444H8.248a.722.722,0,0,0,.662-.434l1.56-3.588a10.419,10.419,0,0,0,1.4.4,2.167,2.167,0,0,0,4.206,0,10.279,10.279,0,0,0,1.4-.4l1.561,3.588a.722.722,0,0,0,.662.434h2.757a.722.722,0,0,0,0-1.444H20.172L18.8,21.221a10.308,10.308,0,0,0,.946-.555,2.167,2.167,0,0,0,2.973-2.978,10.345,10.345,0,0,0,1.516-3.666A2.171,2.171,0,0,0,25.889,11.916Zm-9.951,8.82a2.166,2.166,0,0,0-3.931,0,8.887,8.887,0,0,1-.961-.272l2.772-6.376a2.233,2.233,0,0,0,.306,0L16.9,20.464A8.926,8.926,0,0,1,15.939,20.736Zm-.49-7.228c.017-.016.037-.027.054-.044a2.176,2.176,0,1,0-3.078,0c.021.021.046.035.067.055L9.72,19.9c-.2-.108-.4-.231-.592-.356a2.166,2.166,0,0,0-2.775-2.78,8.978,8.978,0,0,1-1.186-2.886,2.164,2.164,0,0,0,0-3.915A8.97,8.97,0,0,1,6.362,7.074a2.165,2.165,0,0,0,2.77-2.768,8.933,8.933,0,0,1,2.885-1.194,2.164,2.164,0,0,0,3.913,0,8.907,8.907,0,0,1,2.885,1.194,2.164,2.164,0,0,0,2.771,2.767,8.912,8.912,0,0,1,1.2,2.883,2.165,2.165,0,0,0,0,3.922A8.918,8.918,0,0,1,21.6,16.761a2.165,2.165,0,0,0-2.776,2.78c-.194.124-.39.247-.592.356Z"
+                                                          transform="translate(-2.057)" fill="#dedede">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span class="title">مراکز تفریحی</span>
+                                        </span>
+                            <i class="fas fa-angle-down"></i>
+                        </button>
+                    </a>
+                    <div class="collapse category-items" id="collapse-nav-4" data-parent="#categories">
+                        <div class="d-flex flex-column">
+                            <a href="#" class="d-flex align-items-center w-100">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24.001"
+                                         viewBox="0 0 24 24.001">
+                                        <g id="coffee-cup" transform="translate(0 0.001)">
+                                            <path id="Path_8751" data-name="Path 8751"
+                                                  d="M7.757,6a.75.75,0,0,1-.492-1.316A.606.606,0,0,0,7.5,4.167a.693.693,0,0,0-.372-.518A2.172,2.172,0,0,1,6.009,1.975,2.1,2.1,0,0,1,6.751.184a.75.75,0,1,1,.984,1.132.606.606,0,0,0-.232.517.694.694,0,0,0,.373.518A2.173,2.173,0,0,1,8.991,4.025a2.1,2.1,0,0,1-.742,1.792A.755.755,0,0,1,7.757,6Z"
+                                                  fill="#ffffff"></path>
+                                            <path id="Path_8752" data-name="Path 8752"
+                                                  d="M12.757,6a.75.75,0,0,1-.492-1.316.606.606,0,0,0,.232-.517.694.694,0,0,0-.373-.518,2.173,2.173,0,0,1-1.115-1.674A2.1,2.1,0,0,1,11.751.183a.75.75,0,0,1,.983,1.133.606.606,0,0,0-.232.517.694.694,0,0,0,.373.518A2.173,2.173,0,0,1,13.99,4.025a2.1,2.1,0,0,1-.742,1.792A.751.751,0,0,1,12.757,6Z"
+                                                  fill="#ffffff"></path>
+                                            <path id="Path_8753" data-name="Path 8753"
+                                                  d="M17.25,24H2.75A2.752,2.752,0,0,1,0,21.25v-1a.75.75,0,0,1,.75-.75h18.5a.75.75,0,0,1,.75.75v1A2.752,2.752,0,0,1,17.25,24Z"
+                                                  fill="#ffffff"></path>
+                                            <path id="Path_8754" data-name="Path 8754"
+                                                  d="M3.792,18.5H16.219a8.872,8.872,0,0,0,1.435-1.767.768.768,0,0,0,.07-.1A9.046,9.046,0,0,0,19,12V8.25a.75.75,0,0,0-.75-.75H1.75A.75.75,0,0,0,1,8.25V12A8.969,8.969,0,0,0,3.792,18.5Z"
+                                                  fill="#ffffff"></path>
+                                            <path id="Path_8755" data-name="Path 8755"
+                                                  d="M20,9.25v2a2,2,0,0,1,2,2,2,2,0,0,1-2,2h-.563a9.99,9.99,0,0,1-.854,1.9c-.021.036-.046.069-.07.1H20a4,4,0,0,0,4-4A4,4,0,0,0,20,9.25Z"
+                                                  fill="#ffffff"></path>
+                                        </g>
+                                    </svg>
+                                    <span class="title">کافی شاپ</span>
+                                </div>
+                            </a>
+                            <a href="#" class="d-flex align-items-center w-100">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17.238"
+                                         viewBox="0 0 24 17.238">
+                                        <g id="dinner" transform="translate(0 -72.125)">
+                                            <g id="Group_3835" data-name="Group 3835"
+                                               transform="translate(0 86.812)">
+                                                <g id="Group_3834" data-name="Group 3834">
+                                                    <rect id="Rectangle_4848" data-name="Rectangle 4848"
+                                                          width="24" height="2.552" fill="#dedede"></rect>
+                                                </g>
+                                            </g>
+                                            <g id="Group_3837" data-name="Group 3837"
+                                               transform="translate(1.063 72.125)">
+                                                <g id="Group_3836" data-name="Group 3836">
+                                                    <path id="Path_8756" data-name="Path 8756"
+                                                          d="M41.351,77.895a10.858,10.858,0,0,0-6.194-3.1,1.782,1.782,0,1,0-3.083,0,10.942,10.942,0,0,0-9.4,10.588H44.552A10.865,10.865,0,0,0,41.351,77.895Z"
+                                                          transform="translate(-22.678 -72.125)"
+                                                          fill="#dedede"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span class="title">رستوران سنتی</span>
+                                </div>
+                            </a>
+                            <a href="#" class="d-flex align-items-center w-100">
+                                <div>
+                                    <i class="fas fa-pizza-slice"></i>
+                                    <span class="title">رستوران ایتالیایی</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="partMessages">
+            <div class="adminMessage">
+                <div class="header">
+                    <div class="DateAndTime">
+                        <span>1399/5/3</span>
+                        <span>17:55</span>
+                    </div>
+                    <div class="avatarAndName">
+                        <span>Admin_13244</span>
+                        <div class="bg-avatar">
+                            <img src="img/user-1.png" class="img-fluid" alt="کاربر">
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم
+                    ایپسوم متن ساختگی با تولید سادگیت
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                </p>
+            </div>
+
+            <div class="parentUserMessage">
+                <div class="userMessage">
+                    <div class="header">
+                        <div class="avatarAndName">
+                            <div class="bg-avatar">
+                                <img src="img/user-1.png" class="img-fluid" alt="کاربر">
+                            </div>
+                            <span>رضا حیدری</span>
+                        </div>
+                        <div class="DateAndTime">
+                            <span>1399/5/3</span>
+                            <span>17:55</span>
+                        </div>
+                    </div>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم
+                        ایپسوم متن ساختگی با تولید سادگیت
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                    </p>
+                </div>
+            </div>
+            <div class="parentUserMessage">
+                <div class="userMessage">
+                    <div class="header">
+                        <div class="avatarAndName">
+                            <div class="bg-avatar">
+                                <img src="img/user-1.png" class="img-fluid" alt="کاربر">
+                            </div>
+                            <span>رضا حیدری</span>
+                        </div>
+                        <div class="DateAndTime">
+                            <span>1399/5/3</span>
+                            <span>17:55</span>
+                        </div>
+                    </div>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم
+                        ایپسوم متن ساختگی با تولید سادگیت
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                    </p>
+                </div>
+            </div>
+            <div class="parentUserMessage">
+                <div class="userMessage">
+                    <div class="header">
+                        <div class="avatarAndName">
+                            <div class="bg-avatar">
+                                <img src="img/user-1.png" class="img-fluid" alt="کاربر">
+                            </div>
+                            <span>رضا حیدری</span>
+                        </div>
+                        <div class="DateAndTime">
+                            <span>1399/5/3</span>
+                            <span>17:55</span>
+                        </div>
+                    </div>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم
+                        ایپسوم متن ساختگی با تولید سادگیت
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                    </p>
+                </div>
+            </div>
+            <div class="parentUserMessage">
+                <div class="userMessage">
+                    <div class="header">
+                        <div class="avatarAndName">
+                            <div class="bg-avatar">
+                                <img src="img/user-1.png" class="img-fluid" alt="کاربر">
+                            </div>
+                            <span>رضا حیدری</span>
+                        </div>
+                        <div class="DateAndTime">
+                            <span>1399/5/3</span>
+                            <span>17:55</span>
+                        </div>
+                    </div>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم
+                        ایپسوم متن ساختگی با تولید سادگیت
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="row-btn-sendANewTicket">
+        <button type="button" class="btn btn-sendANewTicket" data-toggle="modal" data-target="#sendTicket">
+            ارسال تیکت جدید
+        </button>
+    </div>
+
+    <div class="modal fade" id="sendTicket">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-header">
+                        <div class="avatarAndName">
+                            <div class="bg-avatar">
+                                <img src="img/user-1.png" class="img-fluid" alt="کاربر">
+                            </div>
+                            <span>رضا حیدری</span>
+                        </div>
+                        <input type="file" class="input-file" value="ارسال فایل">
+                    </div>
+                    <div class="subject">
+                        <span>
+                            موضوع:
+                        </span>
+                        <span>
+                            مشکل در ایجاد اکانت برگزار کننده و برگزاری رویداد
+                        </span>
+                    </div>
+                    <form id="form-senTicket">
+                        <textarea class="form-control" id="userMessageText" rows="12"
+                                  placeholder="پیام خود را وارد کنید"></textarea>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="form-group col-md-6 pr-0">
+                                <input type="text" class="form-control" id="codeNumber"
+                                       placeholder="کد روبرو وارد کنید">
+                            </div>
+                            <div class="form-group col-md-6 pl-0">
+                                <input type="text" readonly class="form-control-plaintext text-center" id="readonly"
+                                       value="A A A 7 7 7">
+                                <svg id="Refresh" xmlns="http://www.w3.org/2000/svg" width="22.023" height="22.023"
+                                     viewBox="0 0 22.023 22.023">
+                                    <path id="Path_189" data-name="Path 189"
+                                          d="M6.882,13.765c.688,0,.964.413.413.964L5.231,16.793a8.242,8.242,0,0,0,5.781,2.478,8.325,8.325,0,0,0,8.259-7.158,1.392,1.392,0,0,1,2.753.275v.275a11.007,11.007,0,0,1-11.012,9.36,11.51,11.51,0,0,1-7.846-3.166l-2.2,2.2C.413,21.61,0,21.335,0,20.647V14.453a.65.65,0,0,1,.688-.688Zm8.259-5.506c-.688,0-.964-.413-.413-.964l2.065-2.065a8.242,8.242,0,0,0-5.781-2.478A8.325,8.325,0,0,0,2.753,9.911a1.308,1.308,0,0,1-1.376,1.1A1.3,1.3,0,0,1,0,9.635V9.36A11.007,11.007,0,0,1,11.012,0a11.51,11.51,0,0,1,7.846,3.166l2.2-2.2c.551-.551.964-.275.964.413V7.571a.65.65,0,0,1-.688.688Z"
+                                          fill="#FF0077"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-senTicket">
+                            ارسال تیکت
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/nav-responsive.js"></script>
+<script src="js/messageToBackUp.js"></script>
+<script src="js/chatWIthSupport.js"></script>
+</body>
+</html>

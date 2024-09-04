@@ -1,0 +1,479 @@
+.RightBox-organizerPage {
+    overflow-y: scroll;
+    min-height: 44rem;
+    max-height: 44rem;
+    padding: 3rem;
+    scrollbar-width: thin !important;
+    scrollbar-color: #FF0077 #fff !important;
+}
+
+.RightBox-organizerPage::-webkit-scrollbar {
+    width: 8px !important;
+    background-color: #fff !important;
+    right: 0 !important;
+}
+
+.RightBox-organizerPage::-webkit-scrollbar-thumb {
+    background-color: #FF0077 !important;
+    border-radius: 1.5rem !important;
+}
+
+.RightBox-organizerPage::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+    background-color: #fff !important;
+    border-radius: 1.5rem !important;
+}
+
+.RightBox-organizerPage .btn-SendAMessageToTheOrganizer {
+    position: absolute;
+    left: 4rem;
+    bottom: 3rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.RightBox-organizerPage h2 {
+    font-size: 1.25rem;
+    color: #343434;
+}
+
+.RightBox-organizerPage p {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 2.25rem;
+    margin-bottom: 3rem;
+}
+
+.leftBox-organizerPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.leftBox-organizerPage .bg-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 11.5rem;
+    height: 11.5rem;
+    box-shadow: 0 5px .75rem 0 #00000015;
+    border-radius: .75rem;
+    margin-bottom: 1.5rem;
+}
+
+.leftBox-organizerPage .nameAndIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.leftBox-organizerPage .nameAndIcon svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: .5rem;
+}
+
+.leftBox-organizerPage .nameAndIcon h1 {
+    color: #585858;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.leftBox-organizerPage .field {
+    color: #B2B2B2;
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.leftBox-organizerPage .statistics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.leftBox-organizerPage .statistics div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftBox-organizerPage .statistics .numbers {
+    color: #585858;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: IranSansFaNum, sans-serif;
+    margin-bottom: .5rem;
+}
+
+.leftBox-organizerPage .statistics .labelNumbers {
+    color: #B2B2B2;
+    font-size: .65rem;
+    font-weight: 500;
+}
+
+.leftBox-organizerPage .btn-follow {
+    background-color: #FF0077;
+    color: #fff;
+    width: 100%;
+    padding: .25rem 1rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+.leftBox-organizerPage .address, .leftBox-organizerPage .phone-number {
+    display: flex;
+    justify-content: center;
+    color: #9E9E9E;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+    font-family: IranSansFaNum, sans-serif;
+}
+
+.leftBox-organizerPage .toGivePoints {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #9E9E9E80;
+    font-size: 1.2rem;
+    margin-top: auto;
+}
+
+.leftBox-organizerPage .starts-and-medium {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: IranSansFaNum, sans-serif;
+}
+
+
+#gallery .owl-carousel .owl-dots, #gallery .owl-carousel .owl-nav {
+    display: flex !important;
+    justify-content: center;
+}
+
+#gallery .owl-carousel .owl-dots {
+    margin-top: -1.5rem;
+}
+
+#gallery .owl-carousel .owl-dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FF0077 !important;
+    opacity: .5;
+    margin: 0 .5rem;
+}
+
+#gallery .owl-carousel .owl-dots button.active {
+    opacity: 1;
+    outline: none;
+}
+
+#gallery .owl-carousel .owl-nav button {
+    background-color: #fff !important;
+    border-radius: .75rem;
+    box-shadow: 0 3px 1rem 0 #70707030 !important;
+    font-size: 2.75rem;
+    font-weight: 600;
+    width: 2.5rem !important;
+    min-width: 2.5rem;
+    height: 2.5rem !important;
+    color: #FF0077 !important;
+    outline: none;
+    margin: 0 auto;
+}
+
+#ongoingEvents .owl-item, #eventsArchive .owl-item {
+    min-width: 22.5rem;
+}
+
+#eventsArchive .owl-item {
+    min-width: 21rem;
+}
+
+#eventsArchive .partTop h2 {
+    font-size: 1.2rem !important;
+}
+
+#eventsArchive .partBottom svg {
+    width: .8rem;
+    height: .8rem;
+    margin-left: .5rem;
+}
+
+#eventsArchive .eventsArchiveInformation svg path, #eventsArchive .eventsArchiveInformation svg circle {
+    fill: #FF0077 !important;
+}
+
+#eventsArchive .date {
+    margin-bottom: .5rem;
+}
+
+#eventsArchive .date, #eventsArchive .participant {
+    display: flex;
+    align-items: center;
+}
+
+#eventsArchive .partBottom .date-number, #eventsArchive .partBottom .participant-number {
+    font-size: 1.1rem !important;
+    font-weight: 600;
+    font-family: IranSansFaNum, sans-serif;
+    color: #505050;
+}
+
+#eventsArchive .partBottom .participant-number span {
+    font-size: .7rem !important;
+    font-weight: 600;
+    color: #9A9A9A;
+}
+
+.comment {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.user-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2.5rem;
+    box-shadow: 0 5px 1rem 0 #00000020;
+}
+
+.user-information .bg-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.user-information .bg-avatar img {
+    width: auto;
+    height: 100%;
+}
+
+.user-information .nameAndName-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-information .nameAndName-date h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #3B3B3B;
+}
+
+.user-information .nameAndName-date span {
+    font-size: 1.1rem;
+    font-family: IranSansFaNum, sans-serif;
+    color: #707070;
+}
+
+.user-information .btn-PostReply {
+    background-color: #FF0077;
+    color: #fff;
+    border-radius: .6rem;
+    white-space: nowrap;
+}
+
+.text-comment {
+    padding: 2.5rem 3.5rem 1.5rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-comment p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.text-comment .likeAndDislike {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: IranSansFaNum, sans-serif;
+}
+
+.text-comment .likeAndDislike .like {
+    margin-left: 1rem;
+}
+
+.text-comment .likeAndDislike .like, #userComments .text-comment .likeAndDislike .dislike {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text-comment .likeAndDislike .like span, #userComments .text-comment .likeAndDislike .dislike span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ACACAC;
+    margin-left: .25rem;
+}
+
+.BoxReply {
+    border-top: 1px solid #00000020;
+}
+
+.BoxReply p {
+    margin-right: 4rem;
+}
+
+.text-comment .nameAndIconResponder {
+    margin-bottom: 1.5rem;
+    margin-right: 2rem;
+}
+
+.text-comment .nameAndIconResponder svg {
+    margin-left: .5rem;
+}
+
+.text-comment .nameAndIconResponder .name-replyUser {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #858585;
+    margin-left: .25rem;
+}
+
+.text-comment .nameAndIconResponder .textInResponse {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #343434;
+    margin-left: .25rem;
+}
+
+#sendComment form {
+    padding: 3rem;
+}
+
+#sendComment form textarea, form input {
+    background-color: #F5F5F5 !important;
+    border: none !important;
+    border-radius: .75rem !important;
+    padding: 1.5rem 2rem !important;
+    height: auto !important;
+}
+
+#sendComment form textarea {
+    margin-bottom: 3rem !important;
+}
+
+#sendComment form input {
+    height: 4rem !important;
+    margin: 0 0 1.5rem 0 !important;
+}
+
+#sendComment form #readonly {
+    position: relative;
+    height: 4rem !important;
+    outline: none !important;
+    color: #ACACAC !important;
+}
+
+#sendComment form #Refresh {
+    position: absolute;
+    top: 1.3rem;
+    right: 3rem;
+    cursor: pointer;
+}
+
+.Login-or-signIn {
+    width: 70%;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login-or-signIn p {
+    font-size: 1.3rem;
+    color: #505050;
+    margin-bottom: 2.5rem;
+    line-height: 1.75rem;
+}
+
+.Login-or-signIn .btn-Login-or-signIn {
+    background-color: #FF0077;
+    color: #fff;
+    border-radius: .75rem;
+    white-space: nowrap;
+}
+
+.Login-or-signIn .btn-Login-or-signIn a {
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .text-comment {
+        align-items: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .RightBox-organizerPage p, .text-comment p, .user-information .btn-PostReply, .user-information .nameAndName-date h3, .Login-or-signIn p, .Login-or-signIn .btn-Login-or-signIn {
+        font-size: 1rem;
+    }
+
+    .user-information {
+        padding: .5rem;
+    }
+
+    .text-comment {
+        padding: 2.5rem 1rem 1.5rem 1rem;
+    }
+
+    .text-comment .nameAndIconResponder, .BoxReply p {
+        margin-right: 0;
+    }
+
+    #sendComment form textarea, form input, #sendComment form #readonly {
+        font-size: 1rem !important;
+        padding: 1rem 1rem !important;
+    }
+
+    #sendComment form #Refresh {
+        right: 1.75rem;
+        width: 1.25rem;
+    }
+
+    .Login-or-signIn p {
+        text-align: center;
+    }
+
+    .Login-or-signIn .btn-Login-or-signIn {
+        padding: .375rem 2rem;
+    }
+
+    #gallery .owl-carousel .owl-nav .owl-prev {
+        margin-right: 0 !important;
+    }
+
+    #gallery .owl-carousel .owl-nav .owl-next {
+        margin-left: 0 !important;
+    }
+}
+
+
