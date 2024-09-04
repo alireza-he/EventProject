@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>رویداد</title>
+    <link rel="icon" href="img/bime.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="node_modules/persian-datepicker/dist/css/persian-datepicker.min.css"/>
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="css/panel-organizer.css">
+</head>
+<body>
+
+<div>
+    <header id="mainHeader">
+        <div class="container">
+            <div>
+                <div class="row m-0 justify-content-between align-items-start">
+                    <div class="siteLogo d-none d-lg-flex align-self-center">
+                        <!--                <img src="" alt="لوگوی سایت">-->
+                        <span>Logo Site</span>
+                    </div>
+                    <div class="d-lg-none d-flex justify-content-between align-items-center w-100 border-bottom pb-2 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="bars-icon" width="22.137" height="15.758"
+                             viewBox="0 0 22.137 15.758">
+                            <g id="Icon_feather-menu" data-name="Icon feather-menu" transform="translate(-3 -7.5)">
+                                <path id="Path_1" data-name="Path 1" d="M4.5,18H23.637" transform="translate(0 -2.621)"
+                                      fill="none" stroke="#dedede" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-width="3"></path>
+                                <path id="Path_2" data-name="Path 2" d="M4.5,9H23.637" fill="none" stroke="#dedede"
+                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                                <path id="Path_3" data-name="Path 3" d="M4.5,27H23.637" transform="translate(0 -5.242)"
+                                      fill="none" stroke="#dedede" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-width="3"></path>
+                            </g>
+                        </svg>
+                        <div class="siteLogo d-flex align-self-center">
+                            <!--                <img src="" alt="لوگوی سایت">-->
+                            <span>Logo Site</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center w-75">
+                        <div class="list d-none d-lg-flex justify-content-around align-items-center position-relative ml-lg-5">
+                            <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="20.7 0 120 70" id="bg-icons"
+                                 color="#fff" width="100" height="100"
+                                 style="transition: all 0.15s ease-in-out 0s;will-change: transform;flex-shrink: 0;">
+                                <path fill="#000"
+                                      d="M 158.4 0 L 158.4 70 L 142.5 70 C 138.545 70 134.749 69.335 131.215 68.113 C 123.285 65.369 116.677 59.816 112.565 52.656 C 109.66 47.598 108 41.737 108 35.5 C 108 19.8 95.3 7.1 79.6 7.1 C 63.9 7.1 51.2 19.8 51.2 35.5 C 51.2 41.43 49.7 47.02 47.055 51.903 C 43.22 58.983 36.98 64.58 29.418 67.581 C 25.486 69.141 21.195 70 16.7 70 L 0 70 L 0 0 L 158.4 0 Z"></path>
+                            </svg>-->
+                            <a href="Dashboard.html" id="icon-header1">
+                                <svg id="Dashboard-icon" xmlns="http://www.w3.org/2000/svg" width="25.371"
+                                     height="25.371"
+                                     viewBox="0 0 28.371 28.371">
+                                    <path id="Path_144" data-name="Path 144"
+                                          d="M0,24.825H28.371v3.546H0ZM0,12.412H28.371v8.866H0ZM12.412,0H28.371V8.866H12.412ZM0,0H8.866V8.866H0Z"
+                                          fill="#dedede"></path>
+                                </svg>
+                                <span>داشبورد</span>
+                            </a>
+                            <a href="events.html" id="icon-header2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.793" height="28.5"
+                                     viewBox="0 0 25.793 28.5">
+                                    <g id="events-icon" transform="translate(-24.263 0)">
+                                        <path id="Path_183" data-name="Path 183"
+                                              d="M136.013,7.2a.892.892,0,0,1-.892-.892V.892a.892.892,0,1,1,1.785,0V6.305A.892.892,0,0,1,136.013,7.2Z"
+                                              transform="translate(-104.675 0)" fill="#dedede"></path>
+                                        <path id="Path_184" data-name="Path 184"
+                                              d="M344.764,7.2a.892.892,0,0,1-.892-.892V.892a.892.892,0,0,1,1.785,0V6.305A.892.892,0,0,1,344.764,7.2Z"
+                                              transform="translate(-301.783 0)" fill="#dedede"></path>
+                                        <path id="Path_185" data-name="Path 185"
+                                              d="M24.263,221.975v12.313a3.811,3.811,0,0,0,3.807,3.807H46.25a3.811,3.811,0,0,0,3.807-3.807V221.975Z"
+                                              transform="translate(0 -209.595)" fill="#dedede"></path>
+                                        <path id="Path_186" data-name="Path 186"
+                                              d="M50.056,56.414V52.332a3.811,3.811,0,0,0-3.807-3.807h-.592v3.6a2.677,2.677,0,0,1-5.354,0v-3.6H34.015v3.6a2.677,2.677,0,0,1-5.354,0v-3.6H28.07a3.811,3.811,0,0,0-3.807,3.807v4.083H50.056Z"
+                                              transform="translate(0 -45.819)" fill="#dedede"></path>
+                                    </g>
+                                </svg>
+                                <span>رویداد ها</span>
+                            </a>
+                            <a href="Inbox.html" id="icon-header3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23.91" height="30.952"
+                                     viewBox="0 0 26.91 33.952">
+                                    <g id="bell" transform="translate(-53.013 0)">
+                                        <path id="Path_8243" data-name="Path 8243"
+                                              d="M184.9,465.044a5.129,5.129,0,0,0,9.389,0Z"
+                                              transform="translate(-123.13 -434.155)" fill="#dedede"></path>
+                                        <path id="Path_8244" data-name="Path 8244"
+                                              d="M200.216,3.244a11.537,11.537,0,0,1,3.939.69V3.782A3.787,3.787,0,0,0,200.373,0h-.313a3.787,3.787,0,0,0-3.782,3.782v.15A11.559,11.559,0,0,1,200.216,3.244Z"
+                                              transform="translate(-133.748)" fill="#dedede"></path>
+                                        <path id="Path_8245" data-name="Path 8245"
+                                              d="M78.9,102.5H54.036a1.013,1.013,0,0,1-1-.777.967.967,0,0,1,.532-1.1,5.276,5.276,0,0,0,1.606-2.183c1.384-2.923,1.674-7.041,1.674-9.981a9.619,9.619,0,0,1,19.239-.038c0,.013,0,.025,0,.038,0,2.94.29,7.058,1.674,9.981a5.275,5.275,0,0,0,1.606,2.183.966.966,0,0,1,.532,1.1A1.013,1.013,0,0,1,78.9,102.5Zm.478-1.87h0Z"
+                                              transform="translate(0 -73.599)" fill="#dedede"></path>
+                                    </g>
+                                </svg>
+                                <span>پیام ها</span>
+                            </a>
+                            <a href="Support.html" id="icon-header4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.565" height="29.052"
+                                     viewBox="0 0 32.565 37.052">
+                                    <g id="headphones" transform="translate(-31)">
+                                        <g id="Group_3718" data-name="Group 3718" transform="translate(35.342 15.197)">
+                                            <g id="Group_3717" data-name="Group 3717" transform="translate(0)">
+                                                <path id="Path_8250" data-name="Path 8250"
+                                                      d="M94.257,210A3.26,3.26,0,0,0,91,213.257v8.829a3.257,3.257,0,0,0,6.513,0v-8.829A3.26,3.26,0,0,0,94.257,210Z"
+                                                      transform="translate(-91 -210)" fill="#dedede"></path>
+                                            </g>
+                                        </g>
+                                        <g id="Group_3720" data-name="Group 3720" transform="translate(31 17.539)">
+                                            <g id="Group_3719" data-name="Group 3719">
+                                                <path id="Path_8251" data-name="Path 8251"
+                                                      d="M33.171,243.28a5.386,5.386,0,0,1,.092-.914A3.25,3.25,0,0,0,31,245.451v4.487a3.25,3.25,0,0,0,2.264,3.085,5.386,5.386,0,0,1-.092-.914Z"
+                                                      transform="translate(-31 -242.366)" fill="#dedede"></path>
+                                            </g>
+                                        </g>
+                                        <g id="Group_3722" data-name="Group 3722" transform="translate(44.026 15.197)">
+                                            <g id="Group_3721" data-name="Group 3721">
+                                                <path id="Path_8252" data-name="Path 8252"
+                                                      d="M222.941,210a3.26,3.26,0,0,0-3.257,3.257v8.829a3.26,3.26,0,0,0,3.257,3.257,3.213,3.213,0,0,0,.933-.153,3.25,3.25,0,0,1-3.1,2.324h-3.456a3.257,3.257,0,1,0,0,2.171h3.456a5.434,5.434,0,0,0,5.428-5.428v-11A3.26,3.26,0,0,0,222.941,210Z"
+                                                      transform="translate(-211 -210)" fill="#dedede"></path>
+                                            </g>
+                                        </g>
+                                        <g id="Group_3724" data-name="Group 3724" transform="translate(61.302 17.539)">
+                                            <g id="Group_3723" data-name="Group 3723">
+                                                <path id="Path_8253" data-name="Path 8253"
+                                                      d="M449.722,242.366a5.391,5.391,0,0,1,.092.914v8.829a5.39,5.39,0,0,1-.092.914,3.25,3.25,0,0,0,2.264-3.085v-4.487A3.25,3.25,0,0,0,449.722,242.366Z"
+                                                      transform="translate(-449.722 -242.366)" fill="#dedede"></path>
+                                            </g>
+                                        </g>
+                                        <g id="Group_3726" data-name="Group 3726" transform="translate(31)">
+                                            <g id="Group_3725" data-name="Group 3725">
+                                                <path id="Path_8254" data-name="Path 8254"
+                                                      d="M47.283,0A16.3,16.3,0,0,0,31,16.283v.028A5.375,5.375,0,0,1,33.221,15.3a14.095,14.095,0,0,1,28.124,0,5.377,5.377,0,0,1,2.221,1.008v-.028A16.3,16.3,0,0,0,47.283,0Z"
+                                                      transform="translate(-31)" fill="#dedede"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span>پشتیبانی</span>
+                            </a>
+                        </div>
+                        <div class="d-none d-lg-block col-lg-6 mr-lg-5">
+                            <input type="text"
+                                   class="form-control input-search"
+                                   placeholder="جستجو در سایت"
+                                   aria-label="Text input with dropdown button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="20.305" height="20"
+                                 viewBox="0 0 28.305 28">
+                                <g id="Search" transform="translate(0.497)">
+                                    <rect id="Rectangle_176" data-name="Rectangle 176" width="28" height="28"
+                                          transform="translate(-0.497)" fill="none"></rect>
+                                    <path id="Path_99" data-name="Path 99"
+                                          d="M0,25.2l5.735-5.735a11.9,11.9,0,0,1-2.433-7.3,12.166,12.166,0,0,1,24.332,0A12.091,12.091,0,0,1,15.468,24.332a11.9,11.9,0,0,1-7.3-2.433L2.433,27.634ZM24.158,12.166a8.605,8.605,0,0,0-8.69-8.69,8.605,8.605,0,0,0-8.69,8.69,8.605,8.605,0,0,0,8.69,8.69A8.605,8.605,0,0,0,24.158,12.166Z"
+                                          transform="translate(0.174 0)" fill="#f07"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="d-lg-none d-flex justify-content-between align-items-center w-100">
+                        <div class="col-lg-5 mr-lg-3">
+                            <input type="text"
+                                   class="form-control input-search"
+                                   placeholder="جستجو در سایت"
+                                   aria-label="Text input with dropdown button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="20.305" height="20"
+                                 viewBox="0 0 28.305 28">
+                                <g id="Search" transform="translate(0.497)">
+                                    <rect id="Rectangle_176" data-name="Rectangle 176" width="28" height="28"
+                                          transform="translate(-0.497)" fill="none"></rect>
+                                    <path id="Path_99" data-name="Path 99"
+                                          d="M0,25.2l5.735-5.735a11.9,11.9,0,0,1-2.433-7.3,12.166,12.166,0,0,1,24.332,0A12.091,12.091,0,0,1,15.468,24.332a11.9,11.9,0,0,1-7.3-2.433L2.433,27.634ZM24.158,12.166a8.605,8.605,0,0,0-8.69-8.69,8.605,8.605,0,0,0-8.69,8.69,8.605,8.605,0,0,0,8.69,8.69A8.605,8.605,0,0,0,24.158,12.166Z"
+                                          transform="translate(0.174 0)" fill="#f07"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="list d-flex justify-content-around align-items-center">
+                            <a href="Dashboard.html">
+                                <svg id="Dashboard-icon" xmlns="http://www.w3.org/2000/svg" width="25.371"
+                                     height="25.371"
+                                     viewBox="0 0 28.371 28.371">
+                                    <path id="Path_144" data-name="Path 144"
+                                          d="M0,24.825H28.371v3.546H0ZM0,12.412H28.371v8.866H0ZM12.412,0H28.371V8.866H12.412ZM0,0H8.866V8.866H0Z"
+                                          fill="#dedede"></path>
+                                </svg>
+                                <span>داشبورد</span>
+                            </a>
+                            <a href="events.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.793" height="28.5"
+                                     viewBox="0 0 25.793 28.5">
+                                    <g id="events-icon" transform="translate(-24.263 0)">
+                                        <path id="Path_183" data-name="Path 183"
+                                              d="M136.013,7.2a.892.892,0,0,1-.892-.892V.892a.892.892,0,1,1,1.785,0V6.305A.892.892,0,0,1,136.013,7.2Z"
+                                              transform="translate(-104.675 0)" fill="#dedede"></path>
+                                        <path id="Path_184" data-name="Path 184"
+                                              d="M344.764,7.2a.892.892,0,0,1-.892-.892V.892a.892.892,0,0,1,1.785,0V6.305A.892.892,0,0,1,344.764,7.2Z"
+                                              transform="translate(-301.783 0)" fill="#dedede"></path>
+                                        <path id="Path_185" data-name="Path 185"
+                                              d="M24.263,221.975v12.313a3.811,3.811,0,0,0,3.807,3.807H46.25a3.811,3.811,0,0,0,3.807-3.807V221.975Z"
+                                              transform="translate(0 -209.595)" fill="#dedede"></path>
+                                        <path id="Path_186" data-name="Path 186"
+                                              d="M50.056,56.414V52.332a3.811,3.811,0,0,0-3.807-3.807h-.592v3.6a2.677,2.677,0,0,1-5.354,0v-3.6H34.015v3.6a2.677,2.677,0,0,1-5.354,0v-3.6H28.07a3.811,3.811,0,0,0-3.807,3.807v4.083H50.056Z"
+                                              transform="translate(0 -45.819)" fill="#dedede"></path>
+                                    </g>
+                                </svg>
+                                <span>رویداد ها</span>
+                            </a>
+                            <a href="Inbox.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23.91" height="30.952"
+                                     viewBox="0 0 26.91 33.952">
+                                    <g id="bell" transform="translate(-53.013 0)">
+                                        <path id="Path_8243" data-name="Path 8243"
+                                              d="M184.9,465.044a5.129,5.129,0,0,0,9.389,0Z"
+                                              transform="translate(-123.13 -434.155)" fill="#dedede"></path>
+                                        <path id="Path_8244" data-name="Path 8244"
+                                              d="M200.216,3.244a11.537,11.537,0,0,1,3.939.69V3.782A3.787,3.787,0,0,0,200.373,0h-.313a3.787,3.787,0,0,0-3.782,3.782v.15A11.559,11.559,0,0,1,200.216,3.244Z"
+                                              transform="translate(-133.748)" fill="#dedede"></path>
+                                        <path id="Path_8245" data-name="Path 8245"
+                                              d="M78.9,102.5H54.036a1.013,1.013,0,0,1-1-.777.967.967,0,0,1,.532-1.1,5.276,5.276,0,0,0,1.606-2.183c1.384-2.923,1.674-7.041,1.674-9.981a9.619,9.619,0,0,1,19.239-.038c0,.013,0,.025,0,.038,0,2.94.29,7.058,1.674,9.981a5.275,5.275,0,0,0,1.606,2.183.966.966,0,0,1,.532,1.1A1.013,1.013,0,0,1,78.9,102.5Zm.478-1.87h0Z"
+                                              transform="translate(0 -73.599)" fill="#dedede"></path>
+                                    </g>
+                                </svg>
+                                <span>پیام ها</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav id="nav">
+        <div id="scroll">
+            <ul class="list-unstyled">
+                <li class="d-flex justify-content-end align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="nav-close-icon" width="13.426" height="13.423"
+                         viewBox="0 0 13.426 13.423">
+                        <path id="Icon-close"
+                              d="M19.589,18l4.8-4.8A1.124,1.124,0,0,0,22.8,11.616l-4.8,4.8-4.8-4.8A1.124,1.124,0,1,0,11.616,13.2l4.8,4.8-4.8,4.8A1.124,1.124,0,0,0,13.2,24.384l4.8-4.8,4.8,4.8A1.124,1.124,0,1,0,24.384,22.8Z"
+                              transform="translate(-11.285 -11.289)"></path>
+                    </svg>
+                </li>
+
+                <li class="d-flex justify-content-center align-items-start mb-4">
+                    <a href="#">
+                        <div id="logo">
+                            <img src="img/user-1.png" alt="لوگوی شرکت">
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Dashboard.html" class="d-flex align-items-center w-100">
+                        <div class="bg-icons">
+                            <svg id="Feed" xmlns="http://www.w3.org/2000/svg" width="22.514" height="22.514"
+                                 viewBox="0 0 22.514 22.514">
+                                <path id="Path_144" data-name="Path 144"
+                                      d="M0,19.7H22.514v2.814H0ZM0,9.85H22.514v7.036H0ZM9.85,0H22.514V7.036H9.85ZM0,0H7.036V7.036H0Z"
+                                      fill="#dedede"></path>
+                            </svg>
+                        </div>
+                        <span class="title">داشبورد</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Register-a-new-event.html"
+                       class="d-flex align-items-center w-100">
+                        <div class="bg-icons">
+                            <svg id="Calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                 viewBox="0 0 16 16">
+                                <rect id="Rectangle_557" data-name="Rectangle 557" width="16" height="16"
+                                      fill="none"></rect>
+                                <path id="Path_149" data-name="Path 149"
+                                      d="M2,5v9H14V5ZM13,2h2a.945.945,0,0,1,1,1V15a.945.945,0,0,1-1,1H1a.945.945,0,0,1-1-1V3A.945.945,0,0,1,1,2H3V1A.945.945,0,0,1,4,0,.945.945,0,0,1,5,1V2h6V1a1,1,0,0,1,2,0ZM12,12H10V10h2ZM9,12H7V10H9Zm3-3H10V7h2ZM9,9H7V7H9ZM6,12H4V10H6Z"
+                                      fill="#f07"></path>
+                            </svg>
+                        </div>
+                        <span class="title">ثبت رویداد جدید</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#financial-department-organizer-nav" data-toggle="collapse"
+                       class="d-flex align-items-center w-100">
+                        <div class="bg-icons">
+                            <svg id="Refresh" xmlns="http://www.w3.org/2000/svg" width="17.808" height="17.808"
+                                 viewBox="0 0 17.808 17.808">
+                                <path id="Path_189" data-name="Path 189"
+                                      d="M5.565,11.13c.556,0,.779.334.334.779L4.229,13.578a6.664,6.664,0,0,0,4.674,2,6.732,6.732,0,0,0,6.678-5.787,1.125,1.125,0,0,1,2.226.223v.223a8.9,8.9,0,0,1-8.9,7.568,9.307,9.307,0,0,1-6.344-2.56L.779,17.029c-.445.445-.779.223-.779-.334V11.686a.526.526,0,0,1,.556-.556Zm6.678-4.452c-.556,0-.779-.334-.334-.779l1.669-1.669a6.664,6.664,0,0,0-4.674-2A6.732,6.732,0,0,0,2.226,8.013a1.058,1.058,0,0,1-1.113.89A1.052,1.052,0,0,1,0,7.791V7.568A8.9,8.9,0,0,1,8.9,0a9.307,9.307,0,0,1,6.344,2.56L17.029.779c.445-.445.779-.223.779.334V6.121a.526.526,0,0,1-.556.556Z"
+                                      fill="#f07"></path>
+                            </svg>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center w-100 p-0">
+                            <span class="title">امور مالی</span>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </a>
+                    <div class="collapse collapseLinks" id="financial-department-organizer-nav"
+                         data-parent="#list-parent">
+                        <div class="d-flex flex-column">
+                            <a href="Payment-list.html" class="w-100">لیست پرداخت ها</a>
+                            <a href="Transactions.html" class="w-100">تراکنش ها</a>
+                            <a href="Discount-codes.html" class="w-100">کد های تخفیف</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#User-management-organizer-nav" data-toggle="collapse"
+                       class="d-flex align-items-center w-100">
+                        <div class="bg-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19.483" height="17"
+                                 viewBox="0 0 19.483 17">
+                                <g id="customer" transform="translate(0 0)">
+                                    <circle id="Ellipse_204" data-name="Ellipse 204" cx="3.5" cy="3.5" r="3.5"
+                                            transform="translate(6 0)" fill="#f07"></circle>
+                                    <circle id="Ellipse_205" data-name="Ellipse 205" cx="2.5" cy="2.5" r="2.5"
+                                            transform="translate(14 2)" fill="#f07"></circle>
+                                    <ellipse id="Ellipse_206" data-name="Ellipse 206" cx="2" cy="2.5" rx="2"
+                                             ry="2.5" transform="translate(1 2)" fill="#f07"></ellipse>
+                                    <path id="Path_9415" data-name="Path 9415"
+                                          d="M5.106,241.118a3.384,3.384,0,0,0-2.523-.586A2.579,2.579,0,0,0,0,243.1v4.156a1.118,1.118,0,0,0,1.119,1.115c2.665,0,2.344.048,2.344-.115C3.463,245.311,3.114,243.152,5.106,241.118Z"
+                                          transform="translate(0 -232.617)" fill="#f07"></path>
+                                    <path id="Path_9416" data-name="Path 9416"
+                                          d="M126.259,239.895a5.649,5.649,0,0,0-4.357,1.031c-2.087,1.672-1.686,3.923-1.686,6.678a1.335,1.335,0,0,0,1.333,1.333c8.032,0,8.352.259,8.828-.8.156-.357.113-.243.113-3.656A4.613,4.613,0,0,0,126.259,239.895Z"
+                                          transform="translate(-115.611 -231.965)" fill="#f07"></path>
+                                    <path id="Path_9417" data-name="Path 9417"
+                                          d="M380.333,240.533a3.382,3.382,0,0,0-2.523.586c1.977,2.019,1.644,4.031,1.644,7.138,0,.164-.266.115,2.3.115a1.158,1.158,0,0,0,1.159-1.155V243.1A2.579,2.579,0,0,0,380.333,240.533Z"
+                                          transform="translate(-363.433 -232.618)" fill="#f07"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center w-100 p-0">
+                            <span class="title">مدیریت کاربران</span>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </a>
+                    <div class="collapse collapseLinks" id="User-management-organizer-nav"
+                         data-parent="#list-parent">
+                        <div class="d-flex flex-column">
+                            <a href="Followers.html" class="w-100">دنبال کنندگان</a>
+                            <a href="Operator.html" class="w-100">اپراتور</a>
+                            <a href="Sales-representatives.html" class="w-100">نمایندگان فروش</a>
+                            <a href="Archive-of-user-comments.html" class="w-100">آرشیو نظرات کاربران</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="events.html" class="d-flex align-items-center w-100">
+                        <div class="bg-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.924" height="17.595"
+                                 viewBox="0 0 15.924 17.595">
+                                <g id="calendar-1" transform="translate(-24.263)">
+                                    <path id="Path_183" data-name="Path 183"
+                                          d="M135.672,4.444a.551.551,0,0,1-.551-.551V.551a.551.551,0,1,1,1.1,0V3.893A.551.551,0,0,1,135.672,4.444Z"
+                                          transform="translate(-107.041)" fill="#f07"></path>
+                                    <path id="Path_184" data-name="Path 184"
+                                          d="M344.423,4.444a.551.551,0,0,1-.551-.551V.551a.551.551,0,1,1,1.1,0V3.893A.551.551,0,0,1,344.423,4.444Z"
+                                          transform="translate(-308.604)" fill="#f07"></path>
+                                    <path id="Path_185" data-name="Path 185"
+                                          d="M24.263,221.975v7.6a2.353,2.353,0,0,0,2.35,2.35H37.837a2.353,2.353,0,0,0,2.35-2.35v-7.6Z"
+                                          transform="translate(0 -214.332)" fill="#f07"></path>
+                                    <path id="Path_186" data-name="Path 186"
+                                          d="M40.187,53.4v-2.52a2.353,2.353,0,0,0-2.35-2.35h-.365v2.222a1.653,1.653,0,0,1-3.306,0V48.525H30.284v2.222a1.653,1.653,0,0,1-3.306,0V48.525h-.365a2.353,2.353,0,0,0-2.35,2.35V53.4H40.187Z"
+                                          transform="translate(0 -46.854)" fill="#f07"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="title">رویداد ها</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about-us.html" class="d-flex align-items-center w-100 activeLinkPanelOrganizer">
+                        <div class="bg-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17.52"
+                                 viewBox="0 0 16 17.52">
+                                <g id="Pen" transform="translate(0 0.374)">
+                                    <rect id="Rectangle_324" data-name="Rectangle 324" width="16" height="16"
+                                          transform="translate(0 -0.374)" fill="none"></rect>
+                                    <path id="Path_110" data-name="Path 110"
+                                          d="M8.154,3.077,2.462,8.923,0,16l7.077-2.308L12.769,8Zm7.231-.462-2-2a1.865,1.865,0,0,0-2.769,0L8.923,2.308l4.615,4.769,1.846-1.846A1.95,1.95,0,0,0,16,3.846,1.9,1.9,0,0,0,15.385,2.615Z"
+                                          transform="translate(0 1.146)" fill="#f07"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="title">درباره ما</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Sale-statistics.html" class="d-flex align-items-center w-100">
+                        <div class="bg-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <g id="Chart" transform="translate(0 0.437)">
+                                    <g id="Union_43" data-name="Union 43">
+                                        <rect id="Rectangle_692" data-name="Rectangle 692" width="4" height="8"
+                                              transform="translate(0 7.563)" fill="#f07"></rect>
+                                        <rect id="Rectangle_696" data-name="Rectangle 696" width="4" height="16"
+                                              transform="translate(6 -0.437)" fill="#f07"></rect>
+                                        <rect id="Rectangle_697" data-name="Rectangle 697" width="4" height="12"
+                                              transform="translate(12 3.563)" fill="#f07"></rect>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="title">آمار فروش</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Inbox.html" class="d-flex align-items-center w-100">
+                        <div class="bg-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.277"
+                                 viewBox="0 0 16 12.277">
+                                <g id="Messages" transform="translate(0 -0.421)">
+                                    <rect id="Rectangle_117" data-name="Rectangle 117" width="16" height="12"
+                                          transform="translate(0 0.421)" fill="none"></rect>
+                                    <path id="Path_50" data-name="Path 50"
+                                          d="M14,2H2L8,7ZM0,2A2.006,2.006,0,0,1,2,0H14a2.006,2.006,0,0,1,2,2v8a2.006,2.006,0,0,1-2,2H2a2.006,2.006,0,0,1-2-2Z"
+                                          transform="translate(0 0.698)" fill="#f07"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="title">صندوق پیام ها</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Settings.html" class="d-flex align-items-center w-100">
+                        <div class="bg-icons">
+                            <svg id="Settings" xmlns="http://www.w3.org/2000/svg" width="23" height="23.302"
+                                 viewBox="0 0 23 23.302">
+                                <rect id="Rectangle_193" data-name="Rectangle 193" width="23" height="23"
+                                      transform="translate(0 0.302)" fill="none"></rect>
+                                <path id="Path_104" data-name="Path 104"
+                                      d="M270.923,14.564a2.913,2.913,0,1,0-2.913-2.913A2.921,2.921,0,0,0,270.923,14.564Zm-5.971-9.321a8.213,8.213,0,0,1,3.5-1.893L269.612,0h2.913l1.165,3.35a10.17,10.17,0,0,1,3.5,1.893l3.5-.728,1.456,2.621-2.33,2.621a8.3,8.3,0,0,1,.146,1.893c0,.583-.146,1.311-.146,1.893l2.33,2.621-1.456,2.621-3.5-.728a8.213,8.213,0,0,1-3.5,1.893l-1.165,3.35h-2.913l-1.165-3.35a10.17,10.17,0,0,1-3.5-1.893l-3.5.728L260,16.165l2.33-2.621a8.3,8.3,0,0,1-.146-1.893c0-.583.146-1.311.146-1.893L260,7.136l1.456-2.621Z"
+                                      transform="translate(-260)" fill="#dedede"></path>
+                            </svg>
+                        </div>
+                        <span class="title">تنظیمات</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="file-management.html" class="d-flex align-items-center w-100">
+                        <div class="bg-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <g id="Folder" transform="translate(0 -0.256)">
+                                    <path id="Path_178" data-name="Path 178"
+                                          d="M0,10.926V.984A1.022,1.022,0,0,1,.311.259.984.984,0,0,1,.984,0H6.731a.588.588,0,0,1,.414.155.7.7,0,0,1,.311.362l.518,1.45h6.99a1.022,1.022,0,0,1,.725.311A.94.94,0,0,1,16,3v7.974a1.022,1.022,0,0,1-.311.725.94.94,0,0,1-.725.311H.984A1.022,1.022,0,0,1,.259,11.7,1.4,1.4,0,0,1,0,10.926Z"
+                                          transform="translate(0 1.209)" fill="#f07"></path>
+                                    <rect id="Rectangle_1447" data-name="Rectangle 1447" width="16" height="16"
+                                          transform="translate(0 0.256)" fill="none"></rect>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="title">مدیریت فایل</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Support.html" class="d-flex align-items-center w-100">
+                        <div class="bg-icons">
+                            <svg id="headphones" xmlns="http://www.w3.org/2000/svg" width="16.138"
+                                 height="16.138" viewBox="0 0 16.138 16.138">
+                                <path id="Path_8845" data-name="Path 8845"
+                                      d="M1.418,246.7h.946a.473.473,0,0,0,.473-.473v-4.759A.473.473,0,0,0,2.364,241H1.418A1.418,1.418,0,0,0,0,242.418v2.868A1.418,1.418,0,0,0,1.418,246.7Zm0,0"
+                                      transform="translate(0 -233.404)" fill="#f07"></path>
+                                <path id="Path_8846" data-name="Path 8846"
+                                      d="M190.014,241h-.946a.473.473,0,0,0-.473.473v5.7a.473.473,0,0,1-.473.473h-2.451a1.416,1.416,0,0,0-1.331-.946h-1.923a1.418,1.418,0,1,0,0,2.837h1.923a1.416,1.416,0,0,0,1.331-.946h2.451a1.42,1.42,0,0,0,1.418-1.418V246.7h.473a1.418,1.418,0,0,0,1.418-1.418v-2.868A1.418,1.418,0,0,0,190.014,241Zm0,0"
+                                      transform="translate(-175.295 -233.404)" fill="#f07"></path>
+                                <path id="Path_8847" data-name="Path 8847"
+                                      d="M30.684,6.7a2.359,2.359,0,0,1,.451-.046h.946a1.4,1.4,0,0,1,.492.093A5.226,5.226,0,0,1,43,6.744a1.4,1.4,0,0,1,.492-.093h.946a2.359,2.359,0,0,1,.451.046,7.114,7.114,0,0,0-14.2,0Zm0,0"
+                                      transform="translate(-29.716 0)" fill="#f07"></path>
+                            </svg>
+                        </div>
+                        <span class="title">پشتیبانی</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="d-flex align-items-center w-100">
+                        <div class="bg-icons">
+                            <svg id="Close" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                 viewBox="0 0 16 16">
+                                <rect id="Rectangle_1445" data-name="Rectangle 1445" width="16" height="16"
+                                      fill="none"></rect>
+                                <g id="Union_3" data-name="Union 3">
+                                    <rect id="Rectangle_9" data-name="Rectangle 9" width="20" height="2"
+                                          transform="translate(1.414) rotate(45)" fill="#f07"></rect>
+                                    <rect id="Rectangle_10" data-name="Rectangle 10" width="20" height="2"
+                                          transform="translate(0 14.142) rotate(-45)" fill="#f07"></rect>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="title">خروج از حساب</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="main-content">
+        <div class="container">
+            <div class="row m-0 justify-content-between">
+                <div id="navBar-panel" class="Bg-white d-none d-lg-block mb-4 px-3">
+                    <div class="d-flex flex-column justify-content-center align-items-center border-bottom mb-2">
+                        <div class="bg-avatar_navBar-panel">
+                            <img src="img/Logo-dashboard.png" class="img-fluid w-100"
+                                 alt="برگزارکننده">
+                        </div>
+                        <div class="name-user-navBar-panel">
+                            <h1>موسسه کارو</h1>
+                            <div class="bg-icon-nameEdit">
+                                <svg id="Compose" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                     viewBox="0 0 16 16">
+                                    <rect id="Rectangle_324" data-name="Rectangle 324" width="16" height="16"
+                                          fill="none"></rect>
+                                    <path id="Path_110" data-name="Path 110"
+                                          d="M8.154,3.077,2.462,8.923,0,16l7.077-2.308L12.769,8Zm7.231-.462-2-2a1.865,1.865,0,0,0-2.769,0L8.923,2.308l4.615,4.769,1.846-1.846A1.95,1.95,0,0,0,16,3.846,1.9,1.9,0,0,0,15.385,2.615Z"
+                                          fill="#f07"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="Dashboard.html"
+                               class="d-flex align-items-center w-100">
+                                <div class="bg-icons">
+                                    <svg id="Feed" xmlns="http://www.w3.org/2000/svg" width="22.514" height="22.514"
+                                         viewBox="0 0 22.514 22.514">
+                                        <path id="Path_144" data-name="Path 144"
+                                              d="M0,19.7H22.514v2.814H0ZM0,9.85H22.514v7.036H0ZM9.85,0H22.514V7.036H9.85ZM0,0H7.036V7.036H0Z"
+                                              fill="#dedede"></path>
+                                    </svg>
+                                </div>
+                                <span class="title">داشبورد</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Register-a-new-event.html" class="d-flex align-items-center w-100">
+                                <div class="bg-icons">
+                                    <svg id="Calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                         viewBox="0 0 16 16">
+                                        <rect id="Rectangle_557" data-name="Rectangle 557" width="16" height="16"
+                                              fill="none"></rect>
+                                        <path id="Path_149" data-name="Path 149"
+                                              d="M2,5v9H14V5ZM13,2h2a.945.945,0,0,1,1,1V15a.945.945,0,0,1-1,1H1a.945.945,0,0,1-1-1V3A.945.945,0,0,1,1,2H3V1A.945.945,0,0,1,4,0,.945.945,0,0,1,5,1V2h6V1a1,1,0,0,1,2,0ZM12,12H10V10h2ZM9,12H7V10H9Zm3-3H10V7h2ZM9,9H7V7H9ZM6,12H4V10H6Z"
+                                              fill="#f07"></path>
+                                    </svg>
+                                </div>
+                                <span class="title">ثبت رویداد جدید</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#financial-department-organizer" data-toggle="collapse"
+                               class="d-flex align-items-center w-100 activeLinkPanelOrganizer">
+                                <div class="bg-icons">
+                                    <svg id="Refresh" xmlns="http://www.w3.org/2000/svg" width="17.808" height="17.808"
+                                         viewBox="0 0 17.808 17.808">
+                                        <path id="Path_189" data-name="Path 189"
+                                              d="M5.565,11.13c.556,0,.779.334.334.779L4.229,13.578a6.664,6.664,0,0,0,4.674,2,6.732,6.732,0,0,0,6.678-5.787,1.125,1.125,0,0,1,2.226.223v.223a8.9,8.9,0,0,1-8.9,7.568,9.307,9.307,0,0,1-6.344-2.56L.779,17.029c-.445.445-.779.223-.779-.334V11.686a.526.526,0,0,1,.556-.556Zm6.678-4.452c-.556,0-.779-.334-.334-.779l1.669-1.669a6.664,6.664,0,0,0-4.674-2A6.732,6.732,0,0,0,2.226,8.013a1.058,1.058,0,0,1-1.113.89A1.052,1.052,0,0,1,0,7.791V7.568A8.9,8.9,0,0,1,8.9,0a9.307,9.307,0,0,1,6.344,2.56L17.029.779c.445-.445.779-.223.779.334V6.121a.526.526,0,0,1-.556.556Z"
+                                              fill="#f07"></path>
+                                    </svg>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center w-100">
+                                    <span class="title">امور مالی</span>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div class="collapse collapseLinks show" id="financial-department-organizer"
+                                 data-parent="#list-parent">
+                                <div class="d-flex flex-column">
+                                    <a href="Payment-list.html" class="w-100">لیست پرداخت ها</a>
+                                    <a href="Transactions.html" class="w-100">تراکنش ها</a>
+                                    <a href="Discount-codes.html" class="w-100">کد های تخفیف</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#User-management-organizer" data-toggle="collapse"
+                               class="d-flex align-items-center w-100">
+                                <div class="bg-icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.483" height="17"
+                                         viewBox="0 0 19.483 17">
+                                        <g id="customer" transform="translate(0 0)">
+                                            <circle id="Ellipse_204" data-name="Ellipse 204" cx="3.5" cy="3.5" r="3.5"
+                                                    transform="translate(6 0)" fill="#f07"></circle>
+                                            <circle id="Ellipse_205" data-name="Ellipse 205" cx="2.5" cy="2.5" r="2.5"
+                                                    transform="translate(14 2)" fill="#f07"></circle>
+                                            <ellipse id="Ellipse_206" data-name="Ellipse 206" cx="2" cy="2.5" rx="2"
+                                                     ry="2.5" transform="translate(1 2)" fill="#f07"></ellipse>
+                                            <path id="Path_9415" data-name="Path 9415"
+                                                  d="M5.106,241.118a3.384,3.384,0,0,0-2.523-.586A2.579,2.579,0,0,0,0,243.1v4.156a1.118,1.118,0,0,0,1.119,1.115c2.665,0,2.344.048,2.344-.115C3.463,245.311,3.114,243.152,5.106,241.118Z"
+                                                  transform="translate(0 -232.617)" fill="#f07"></path>
+                                            <path id="Path_9416" data-name="Path 9416"
+                                                  d="M126.259,239.895a5.649,5.649,0,0,0-4.357,1.031c-2.087,1.672-1.686,3.923-1.686,6.678a1.335,1.335,0,0,0,1.333,1.333c8.032,0,8.352.259,8.828-.8.156-.357.113-.243.113-3.656A4.613,4.613,0,0,0,126.259,239.895Z"
+                                                  transform="translate(-115.611 -231.965)" fill="#f07"></path>
+                                            <path id="Path_9417" data-name="Path 9417"
+                                                  d="M380.333,240.533a3.382,3.382,0,0,0-2.523.586c1.977,2.019,1.644,4.031,1.644,7.138,0,.164-.266.115,2.3.115a1.158,1.158,0,0,0,1.159-1.155V243.1A2.579,2.579,0,0,0,380.333,240.533Z"
+                                                  transform="translate(-363.433 -232.618)" fill="#f07"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center w-100">
+                                    <span class="title">مدیریت کاربران</span>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div class="collapse collapseLinks" id="User-management-organizer"
+                                 data-parent="#list-parent">
+                                <div class="d-flex flex-column">
+                                    <a href="Followers.html" class="w-100">دنبال کنندگان</a>
+                                    <a href="Operator.html" class="w-100">اپراتور</a>
+                                    <a href="Sales-representatives.html" class="w-100">نمایندگان فروش</a>
+                                    <a href="Archive-of-user-comments.html" class="w-100">آرشیو نظرات کاربران</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="events.html" class="d-flex align-items-center w-100">
+                                <div class="bg-icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15.924" height="17.595"
+                                         viewBox="0 0 15.924 17.595">
+                                        <g id="calendar-1" transform="translate(-24.263)">
+                                            <path id="Path_183" data-name="Path 183"
+                                                  d="M135.672,4.444a.551.551,0,0,1-.551-.551V.551a.551.551,0,1,1,1.1,0V3.893A.551.551,0,0,1,135.672,4.444Z"
+                                                  transform="translate(-107.041)" fill="#f07"></path>
+                                            <path id="Path_184" data-name="Path 184"
+                                                  d="M344.423,4.444a.551.551,0,0,1-.551-.551V.551a.551.551,0,1,1,1.1,0V3.893A.551.551,0,0,1,344.423,4.444Z"
+                                                  transform="translate(-308.604)" fill="#f07"></path>
+                                            <path id="Path_185" data-name="Path 185"
+                                                  d="M24.263,221.975v7.6a2.353,2.353,0,0,0,2.35,2.35H37.837a2.353,2.353,0,0,0,2.35-2.35v-7.6Z"
+                                                  transform="translate(0 -214.332)" fill="#f07"></path>
+                                            <path id="Path_186" data-name="Path 186"
+                                                  d="M40.187,53.4v-2.52a2.353,2.353,0,0,0-2.35-2.35h-.365v2.222a1.653,1.653,0,0,1-3.306,0V48.525H30.284v2.222a1.653,1.653,0,0,1-3.306,0V48.525h-.365a2.353,2.353,0,0,0-2.35,2.35V53.4H40.187Z"
+                                                  transform="translate(0 -46.854)" fill="#f07"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span class="title">رویداد ها</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about-us.html" class="d-flex align-items-center w-100">
+                                <div class="bg-icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17.52"
+                                         viewBox="0 0 16 17.52">
+                                        <g id="Pen" transform="translate(0 0.374)">
+                                            <rect id="Rectangle_324" data-name="Rectangle 324" width="16" height="16"
+                                                  transform="translate(0 -0.374)" fill="none"></rect>
+                                            <path id="Path_110" data-name="Path 110"
+                                                  d="M8.154,3.077,2.462,8.923,0,16l7.077-2.308L12.769,8Zm7.231-.462-2-2a1.865,1.865,0,0,0-2.769,0L8.923,2.308l4.615,4.769,1.846-1.846A1.95,1.95,0,0,0,16,3.846,1.9,1.9,0,0,0,15.385,2.615Z"
+                                                  transform="translate(0 1.146)" fill="#f07"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span class="title">درباره ما</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Sale-statistics.html" class="d-flex align-items-center w-100">
+                                <div class="bg-icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <g id="Chart" transform="translate(0 0.437)">
+                                            <g id="Union_43" data-name="Union 43">
+                                                <rect id="Rectangle_692" data-name="Rectangle 692" width="4" height="8"
+                                                      transform="translate(0 7.563)" fill="#f07"></rect>
+                                                <rect id="Rectangle_696" data-name="Rectangle 696" width="4" height="16"
+                                                      transform="translate(6 -0.437)" fill="#f07"></rect>
+                                                <rect id="Rectangle_697" data-name="Rectangle 697" width="4" height="12"
+                                                      transform="translate(12 3.563)" fill="#f07"></rect>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span class="title">آمار فروش</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Inbox.html" class="d-flex align-items-center w-100">
+                                <div class="bg-icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.277"
+                                         viewBox="0 0 16 12.277">
+                                        <g id="Messages" transform="translate(0 -0.421)">
+                                            <rect id="Rectangle_117" data-name="Rectangle 117" width="16" height="12"
+                                                  transform="translate(0 0.421)" fill="none"></rect>
+                                            <path id="Path_50" data-name="Path 50"
+                                                  d="M14,2H2L8,7ZM0,2A2.006,2.006,0,0,1,2,0H14a2.006,2.006,0,0,1,2,2v8a2.006,2.006,0,0,1-2,2H2a2.006,2.006,0,0,1-2-2Z"
+                                                  transform="translate(0 0.698)" fill="#f07"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center w-100">
+                                    <span class="title">صندوق پیام ها</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Settings.html" class="d-flex align-items-center w-100">
+                                <div class="bg-icons">
+                                    <svg id="Settings" xmlns="http://www.w3.org/2000/svg" width="23" height="23.302"
+                                         viewBox="0 0 23 23.302">
+                                        <rect id="Rectangle_193" data-name="Rectangle 193" width="23" height="23"
+                                              transform="translate(0 0.302)" fill="none"></rect>
+                                        <path id="Path_104" data-name="Path 104"
+                                              d="M270.923,14.564a2.913,2.913,0,1,0-2.913-2.913A2.921,2.921,0,0,0,270.923,14.564Zm-5.971-9.321a8.213,8.213,0,0,1,3.5-1.893L269.612,0h2.913l1.165,3.35a10.17,10.17,0,0,1,3.5,1.893l3.5-.728,1.456,2.621-2.33,2.621a8.3,8.3,0,0,1,.146,1.893c0,.583-.146,1.311-.146,1.893l2.33,2.621-1.456,2.621-3.5-.728a8.213,8.213,0,0,1-3.5,1.893l-1.165,3.35h-2.913l-1.165-3.35a10.17,10.17,0,0,1-3.5-1.893l-3.5.728L260,16.165l2.33-2.621a8.3,8.3,0,0,1-.146-1.893c0-.583.146-1.311.146-1.893L260,7.136l1.456-2.621Z"
+                                              transform="translate(-260)" fill="#dedede"></path>
+                                    </svg>
+                                </div>
+                                <span class="title">تنظیمات</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="file-management.html" class="d-flex align-items-center w-100">
+                                <div class="bg-icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <g id="Folder" transform="translate(0 -0.256)">
+                                            <path id="Path_178" data-name="Path 178"
+                                                  d="M0,10.926V.984A1.022,1.022,0,0,1,.311.259.984.984,0,0,1,.984,0H6.731a.588.588,0,0,1,.414.155.7.7,0,0,1,.311.362l.518,1.45h6.99a1.022,1.022,0,0,1,.725.311A.94.94,0,0,1,16,3v7.974a1.022,1.022,0,0,1-.311.725.94.94,0,0,1-.725.311H.984A1.022,1.022,0,0,1,.259,11.7,1.4,1.4,0,0,1,0,10.926Z"
+                                                  transform="translate(0 1.209)" fill="#f07"></path>
+                                            <rect id="Rectangle_1447" data-name="Rectangle 1447" width="16" height="16"
+                                                  transform="translate(0 0.256)" fill="none"></rect>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span class="title">مدیریت فایل</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Support.html" class="d-flex align-items-center w-100">
+                                <div class="bg-icons">
+                                    <svg id="headphones" xmlns="http://www.w3.org/2000/svg" width="16.138"
+                                         height="16.138" viewBox="0 0 16.138 16.138">
+                                        <path id="Path_8845" data-name="Path 8845"
+                                              d="M1.418,246.7h.946a.473.473,0,0,0,.473-.473v-4.759A.473.473,0,0,0,2.364,241H1.418A1.418,1.418,0,0,0,0,242.418v2.868A1.418,1.418,0,0,0,1.418,246.7Zm0,0"
+                                              transform="translate(0 -233.404)" fill="#f07"></path>
+                                        <path id="Path_8846" data-name="Path 8846"
+                                              d="M190.014,241h-.946a.473.473,0,0,0-.473.473v5.7a.473.473,0,0,1-.473.473h-2.451a1.416,1.416,0,0,0-1.331-.946h-1.923a1.418,1.418,0,1,0,0,2.837h1.923a1.416,1.416,0,0,0,1.331-.946h2.451a1.42,1.42,0,0,0,1.418-1.418V246.7h.473a1.418,1.418,0,0,0,1.418-1.418v-2.868A1.418,1.418,0,0,0,190.014,241Zm0,0"
+                                              transform="translate(-175.295 -233.404)" fill="#f07"></path>
+                                        <path id="Path_8847" data-name="Path 8847"
+                                              d="M30.684,6.7a2.359,2.359,0,0,1,.451-.046h.946a1.4,1.4,0,0,1,.492.093A5.226,5.226,0,0,1,43,6.744a1.4,1.4,0,0,1,.492-.093h.946a2.359,2.359,0,0,1,.451.046,7.114,7.114,0,0,0-14.2,0Zm0,0"
+                                              transform="translate(-29.716 0)" fill="#f07"></path>
+                                    </svg>
+                                </div>
+                                <span class="title">پشتیبانی</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="d-flex align-items-center w-100">
+                                <div class="bg-icons">
+                                    <svg id="Close" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                         viewBox="0 0 16 16">
+                                        <rect id="Rectangle_1445" data-name="Rectangle 1445" width="16" height="16"
+                                              fill="none"></rect>
+                                        <g id="Union_3" data-name="Union 3">
+                                            <rect id="Rectangle_9" data-name="Rectangle 9" width="20" height="2"
+                                                  transform="translate(1.414) rotate(45)" fill="#f07"></rect>
+                                            <rect id="Rectangle_10" data-name="Rectangle 10" width="20" height="2"
+                                                  transform="translate(0 14.142) rotate(-45)" fill="#f07"></rect>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span class="title">خروج از حساب</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="partLeft">
+                    <div class="mb-5">
+                        <header>
+                            <div class="title-and-icon-header">
+                                <div class="bg-headerTag-icon">
+                                    <svg id="Refresh" xmlns="http://www.w3.org/2000/svg" width="17.808" height="17.808"
+                                         viewBox="0 0 17.808 17.808">
+                                        <path id="Path_189" data-name="Path 189"
+                                              d="M5.565,11.13c.556,0,.779.334.334.779L4.229,13.578a6.664,6.664,0,0,0,4.674,2,6.732,6.732,0,0,0,6.678-5.787,1.125,1.125,0,0,1,2.226.223v.223a8.9,8.9,0,0,1-8.9,7.568,9.307,9.307,0,0,1-6.344-2.56L.779,17.029c-.445.445-.779.223-.779-.334V11.686a.526.526,0,0,1,.556-.556Zm6.678-4.452c-.556,0-.779-.334-.334-.779l1.669-1.669a6.664,6.664,0,0,0-4.674-2A6.732,6.732,0,0,0,2.226,8.013a1.058,1.058,0,0,1-1.113.89A1.052,1.052,0,0,1,0,7.791V7.568A8.9,8.9,0,0,1,8.9,0a9.307,9.307,0,0,1,6.344,2.56L17.029.779c.445-.445.779-.223.779.334V6.121a.526.526,0,0,1-.556.556Z"
+                                              fill="#f07"></path>
+                                    </svg>
+                                </div>
+                                <h2>ایجاد کد تخفیف</h2>
+                            </div>
+                        </header>
+
+                        <div>
+                            <div class="DefineANewDiscountCode mb-3">
+                                <div class="item-DefineANewDiscountCode"
+                                     data-toggle="collapse" data-target="#question-1-frequently-asked-questions">
+                                        <span>
+                                         تعریف کد تخفیف جدید
+                                       </span>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+
+                                <div class="collapse Content-item-DefineANewDiscountCode"
+                                     id="question-1-frequently-asked-questions"
+                                >
+                                    <form id="form-DiscountCodesPage">
+                                        <div class="mb-4">
+                                            <header>
+                                                <div class="title-and-icon-header">
+                                                    <div class="bg-headerTag-icon">
+                                                        <svg id="Calendar" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                             height="16"
+                                                             viewBox="0 0 16 16">
+                                                            <rect id="Rectangle_557" data-name="Rectangle 557"
+                                                                  width="16" height="16"
+                                                                  fill="none"></rect>
+                                                            <path id="Path_149" data-name="Path 149"
+                                                                  d="M2,5v9H14V5ZM13,2h2a.945.945,0,0,1,1,1V15a.945.945,0,0,1-1,1H1a.945.945,0,0,1-1-1V3A.945.945,0,0,1,1,2H3V1A.945.945,0,0,1,4,0,.945.945,0,0,1,5,1V2h6V1a1,1,0,0,1,2,0ZM12,12H10V10h2ZM9,12H7V10H9Zm3-3H10V7h2ZM9,9H7V7H9ZM6,12H4V10H6Z"
+                                                                  fill="#f07"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <h2>انتخاب محل برگزاری</h2>
+                                                </div>
+                                                <a href="#" class="btn btn-DefineANewSalon">
+                                                    <span>لیست کدهای تخفیف</span>
+                                                </a>
+                                            </header>
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card-DiscountCodesPage">
+                                                        <div class="row">
+                                                            <div class="col-md form-group input-group-select">
+                                                                <label for="eventName">نام رویداد</label>
+                                                                <select id="eventName">
+                                                                    <option></option>
+                                                                    <option>تئاتر دختران آفتاب</option>
+                                                                    <option>تئاتر سه نفر</option>
+                                                                    <option>سینمایی برادرم خسرو</option>
+                                                                </select>
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                     id="arrow-bottom" width="35"
+                                                                     height="30"
+                                                                     viewBox="0 0 24 24">
+                                                                    <g id="arrow-bottom-g"
+                                                                       transform="translate(-338 -555)">
+                                                                        <rect id="Rectangle_5578"
+                                                                              data-name="Rectangle 5578" width="24"
+                                                                              height="24"
+                                                                              rx="5" transform="translate(338 555)"
+                                                                              fill="#f07"></rect>
+                                                                        <g id="Down_arrow_small_"
+                                                                           data-name="Down arrow small  "
+                                                                           transform="translate(344 561)">
+                                                                            <path id="Path_36" data-name="Path 36"
+                                                                                  d="M7.858,9.6,2,3.745,3.745,2,7.858,6.113,11.972,2l1.745,1.745Z"
+                                                                                  transform="translate(-2 0.493)"
+                                                                                  fill="#fff"></path>
+                                                                            <rect id="Rectangle_1467"
+                                                                                  data-name="Rectangle 1467"
+                                                                                  width="12"
+                                                                                  height="12" fill="none"></rect>
+                                                                        </g>
+                                                                    </g>
+                                                                </svg>
+                                                                <div class="invalid-message"></div>
+                                                            </div>
+                                                            <div class="col-md form-group">
+                                                                <label for="discountCode">کد تخفیف</label>
+                                                                <input type="text" id="discountCode"
+                                                                       class="form-control"/>
+                                                                <div class="invalid-message"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-6 form-group input-group-select">
+                                                                <label for="startDate">تاریخ شروع</label>
+                                                                <input id="startDate"/>
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                     id="arrow-bottom" width="35"
+                                                                     height="30"
+                                                                     viewBox="0 0 24 24">
+                                                                    <g id="arrow-bottom-g"
+                                                                       transform="translate(-338 -555)">
+                                                                        <rect id="Rectangle_5578"
+                                                                              data-name="Rectangle 5578" width="24"
+                                                                              height="24"
+                                                                              rx="5" transform="translate(338 555)"
+                                                                              fill="#f07"></rect>
+                                                                        <g id="Down_arrow_small_"
+                                                                           data-name="Down arrow small  "
+                                                                           transform="translate(344 561)">
+                                                                            <path id="Path_36" data-name="Path 36"
+                                                                                  d="M7.858,9.6,2,3.745,3.745,2,7.858,6.113,11.972,2l1.745,1.745Z"
+                                                                                  transform="translate(-2 0.493)"
+                                                                                  fill="#fff"></path>
+                                                                            <rect id="Rectangle_1467"
+                                                                                  data-name="Rectangle 1467"
+                                                                                  width="12"
+                                                                                  height="12" fill="none"></rect>
+                                                                        </g>
+                                                                    </g>
+                                                                </svg>
+                                                                <div class="invalid-message"></div>
+                                                            </div>
+                                                            <div class="col-md-6 form-group input-group-select">
+                                                                <label for="ExpirationDate">تاریخ انقضا</label>
+                                                                <input id="ExpirationDate"/>
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                     id="arrow-bottom" width="35"
+                                                                     height="30"
+                                                                     viewBox="0 0 24 24">
+                                                                    <g id="arrow-bottom-g"
+                                                                       transform="translate(-338 -555)">
+                                                                        <rect id="Rectangle_5578"
+                                                                              data-name="Rectangle 5578" width="24"
+                                                                              height="24"
+                                                                              rx="5" transform="translate(338 555)"
+                                                                              fill="#f07"></rect>
+                                                                        <g id="Down_arrow_small_"
+                                                                           data-name="Down arrow small  "
+                                                                           transform="translate(344 561)">
+                                                                            <path id="Path_36" data-name="Path 36"
+                                                                                  d="M7.858,9.6,2,3.745,3.745,2,7.858,6.113,11.972,2l1.745,1.745Z"
+                                                                                  transform="translate(-2 0.493)"
+                                                                                  fill="#fff"></path>
+                                                                            <rect id="Rectangle_1467"
+                                                                                  data-name="Rectangle 1467"
+                                                                                  width="12"
+                                                                                  height="12" fill="none"></rect>
+                                                                        </g>
+                                                                    </g>
+                                                                </svg>
+                                                                <div class="invalid-message"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <div class="row">
+                                                <div class="col-md form-group">
+                                                    <label for="Description-DiscountCodesPage">توضیحات</label>
+                                                    <textarea id="Description-DiscountCodesPage"
+                                                              class="form-control"></textarea>
+                                                    <div class="invalid-message"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <header>
+                                                <div class="title-and-icon-header mx-5">
+                                                    <h2>قوانین</h2>
+                                                </div>
+                                            </header>
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card-DiscountCodesPage">
+                                                        <div class="form-row">
+                                                            <div class="col-md form-group input-group-select">
+                                                                <label for="DiscountRate">نرخ تخفیف</label>
+                                                                <select id="DiscountRate">
+                                                                    <option></option>
+                                                                    <option>تئاتر دختران آفتاب</option>
+                                                                    <option>تئاتر سه نفر</option>
+                                                                    <option>سینمایی برادرم خسرو</option>
+                                                                </select>
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                     id="arrow-bottom" width="35"
+                                                                     height="30"
+                                                                     viewBox="0 0 24 24">
+                                                                    <g id="arrow-bottom-g"
+                                                                       transform="translate(-338 -555)">
+                                                                        <rect id="Rectangle_5578"
+                                                                              data-name="Rectangle 5578" width="24"
+                                                                              height="24"
+                                                                              rx="5" transform="translate(338 555)"
+                                                                              fill="#f07"></rect>
+                                                                        <g id="Down_arrow_small_"
+                                                                           data-name="Down arrow small  "
+                                                                           transform="translate(344 561)">
+                                                                            <path id="Path_36" data-name="Path 36"
+                                                                                  d="M7.858,9.6,2,3.745,3.745,2,7.858,6.113,11.972,2l1.745,1.745Z"
+                                                                                  transform="translate(-2 0.493)"
+                                                                                  fill="#fff"></path>
+                                                                            <rect id="Rectangle_1467"
+                                                                                  data-name="Rectangle 1467"
+                                                                                  width="12"
+                                                                                  height="12" fill="none"></rect>
+                                                                        </g>
+                                                                    </g>
+                                                                </svg>
+                                                                <div class="invalid-message"></div>
+                                                            </div>
+                                                            <div class="col-md form-group">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="col-md form-group">
+                                                                <label for="MinimumInvoiceAmount">
+                                                                    حداقل مبلغ صورتحساب
+                                                                </label>
+                                                                <input id="MinimumInvoiceAmount" type="number"
+                                                                       class="form-control"/>
+                                                                <span class="inputGroupPrepend">تومان</span>
+                                                                <div class="invalid-message"></div>
+                                                            </div>
+                                                            <div class="col-md form-group">
+                                                                <label for="MaximumDiscountAmount">
+                                                                    حداکثر مبلغ تخفیف
+                                                                </label>
+                                                                <input id="MaximumDiscountAmount" type="number"
+                                                                       class="form-control"/>
+                                                                <span class="inputGroupPrepend">تومان</span>
+                                                                <div class="invalid-message"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="w-100 d-flex justify-content-center justify-content-lg-start align-items-center pt-4">
+                                            <button type="submit" class="btn btn-RecordInformationAndContinue">
+                                                ثبت اطلاعات
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <header>
+                            <div class="title-and-icon-header">
+                                <div class="bg-headerTag-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.304" height="21.926"
+                                         viewBox="0 0 19.304 21.926">
+                                        <path id="Path_9478" data-name="Path 9478"
+                                              d="M-9.567-17.23A4.28,4.28,0,0,1-8.322-20.4a4.431,4.431,0,0,1,3.267-1.239A4.443,4.443,0,0,1-1.767-20.4,4.392,4.392,0,0,1-.528-17.152V-16.1a4.254,4.254,0,0,1-1.239,3.15,4.422,4.422,0,0,1-3.261,1.233,4.552,4.552,0,0,1-3.254-1.213,4.272,4.272,0,0,1-1.285-3.261ZM-7.076-16.1a2.334,2.334,0,0,0,.567,1.63,1.9,1.9,0,0,0,1.48.626,1.864,1.864,0,0,0,1.467-.626,2.466,2.466,0,0,0,.554-1.7v-1.07a2.376,2.376,0,0,0-.561-1.637A1.89,1.89,0,0,0-5.054-19.5a1.842,1.842,0,0,0-1.474.639,2.5,2.5,0,0,0-.548,1.683ZM.685-5.23A4.191,4.191,0,0,1,1.963-8.407a4.515,4.515,0,0,1,3.248-1.22,4.5,4.5,0,0,1,3.261,1.22,4.344,4.344,0,0,1,1.265,3.28v1.043A4.274,4.274,0,0,1,8.517-.946,4.39,4.39,0,0,1,5.25.287,4.545,4.545,0,0,1,1.937-.933,4.3,4.3,0,0,1,.685-4.161ZM3.176-4.083a2.332,2.332,0,0,0,.58,1.63,1.926,1.926,0,0,0,1.493.639A1.848,1.848,0,0,0,6.711-2.42a2.51,2.51,0,0,0,.535-1.715v-1.1a2.324,2.324,0,0,0-.567-1.643,1.908,1.908,0,0,0-1.467-.613,1.908,1.908,0,0,0-1.467.613,2.42,2.42,0,0,0-.567,1.709ZM-4.3-1.591-6.124-2.648,4.3-19.317l1.826,1.057Z"
+                                              transform="translate(9.567 21.639)" fill="#f07"></path>
+                                    </svg>
+                                </div>
+                                <h2>لیست کد های تخفیف</h2>
+                            </div>
+                        </header>
+
+                        <div class="table-responsive table-DiscountPage">
+                            <table class="table table-borderless">
+                                <thead>
+                                <tr>
+                                    <th>ردیف</th>
+                                    <th>نام</th>
+                                    <th>توضیحات</th>
+                                    <th>کد تخفیف</th>
+                                    <th>تخفیف</th>
+                                    <th>وضعیت</th>
+                                    <th>تاریخ</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>تئاتر قهوه شجری</td>
+                                    <td>تخفیف شب یلدا تئاتر</td>
+                                    <td>teatr_qoqnos</td>
+                                    <td>5%</td>
+                                    <td>فعال</td>
+                                    <td>1399/9/9_1399/10/10</td>
+                                    <td>
+                                        <a href="#" class="btn btn-EditDiscounts">
+                                            <svg id="Compose" xmlns="http://www.w3.org/2000/svg" width="22.209"
+                                                 height="22.209" viewBox="0 0 22.209 22.209">
+                                                <rect id="Rectangle_324" data-name="Rectangle 324" width="22"
+                                                      height="22"
+                                                      transform="translate(0.209)" fill="none"></rect>
+                                                <path id="Path_110" data-name="Path 110"
+                                                      d="M11.318,4.271l-7.9,8.115L0,22.209l9.823-3.2,7.9-7.9ZM21.355,3.63,18.579.854a2.589,2.589,0,0,0-3.844,0L12.386,3.2l6.406,6.62,2.563-2.563a2.707,2.707,0,0,0,.854-1.922A2.636,2.636,0,0,0,21.355,3.63Z"
+                                                      fill="#919191"></path>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>تئاتر قهوه شجری</td>
+                                    <td>تخفیف شب یلدا تئاتر</td>
+                                    <td>teatr_qoqnos</td>
+                                    <td>5%</td>
+                                    <td class="end">اتمام</td>
+                                    <td>1399/9/9_1399/10/10</td>
+                                    <td>
+                                        <a href="#" class="btn btn-EditDiscounts">
+                                            <svg id="Compose" xmlns="http://www.w3.org/2000/svg" width="22.209"
+                                                 height="22.209" viewBox="0 0 22.209 22.209">
+                                                <rect id="Rectangle_324" data-name="Rectangle 324" width="22"
+                                                      height="22"
+                                                      transform="translate(0.209)" fill="none"></rect>
+                                                <path id="Path_110" data-name="Path 110"
+                                                      d="M11.318,4.271l-7.9,8.115L0,22.209l9.823-3.2,7.9-7.9ZM21.355,3.63,18.579.854a2.589,2.589,0,0,0-3.844,0L12.386,3.2l6.406,6.62,2.563-2.563a2.707,2.707,0,0,0,.854-1.922A2.636,2.636,0,0,0,21.355,3.63Z"
+                                                      fill="#919191"></path>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>تئاتر قهوه شجری</td>
+                                    <td>تخفیف شب یلدا تئاتر</td>
+                                    <td>teatr_qoqnos</td>
+                                    <td>5%</td>
+                                    <td>فعال</td>
+                                    <td>1399/9/9_1399/10/10</td>
+                                    <td>
+                                        <a href="#" class="btn btn-EditDiscounts">
+                                            <svg id="Compose" xmlns="http://www.w3.org/2000/svg" width="22.209"
+                                                 height="22.209" viewBox="0 0 22.209 22.209">
+                                                <rect id="Rectangle_324" data-name="Rectangle 324" width="22"
+                                                      height="22"
+                                                      transform="translate(0.209)" fill="none"></rect>
+                                                <path id="Path_110" data-name="Path 110"
+                                                      d="M11.318,4.271l-7.9,8.115L0,22.209l9.823-3.2,7.9-7.9ZM21.355,3.63,18.579.854a2.589,2.589,0,0,0-3.844,0L12.386,3.2l6.406,6.62,2.563-2.563a2.707,2.707,0,0,0,.854-1.922A2.636,2.636,0,0,0,21.355,3.63Z"
+                                                      fill="#919191"></path>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>تئاتر قهوه شجری</td>
+                                    <td>تخفیف شب یلدا تئاتر</td>
+                                    <td>teatr_qoqnos</td>
+                                    <td>5%</td>
+                                    <td class="end">اتمام</td>
+                                    <td>1399/9/9_1399/10/10</td>
+                                    <td>
+                                        <a href="#" class="btn btn-EditDiscounts">
+                                            <svg id="Compose" xmlns="http://www.w3.org/2000/svg" width="22.209"
+                                                 height="22.209" viewBox="0 0 22.209 22.209">
+                                                <rect id="Rectangle_324" data-name="Rectangle 324" width="22"
+                                                      height="22"
+                                                      transform="translate(0.209)" fill="none"></rect>
+                                                <path id="Path_110" data-name="Path 110"
+                                                      d="M11.318,4.271l-7.9,8.115L0,22.209l9.823-3.2,7.9-7.9ZM21.355,3.63,18.579.854a2.589,2.589,0,0,0-3.844,0L12.386,3.2l6.406,6.62,2.563-2.563a2.707,2.707,0,0,0,.854-1.922A2.636,2.636,0,0,0,21.355,3.63Z"
+                                                      fill="#919191"></path>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>تئاتر قهوه شجری</td>
+                                    <td>تخفیف شب یلدا تئاتر</td>
+                                    <td>teatr_qoqnos</td>
+                                    <td>5%</td>
+                                    <td>فعال</td>
+                                    <td>1399/9/9_1399/10/10</td>
+                                    <td>
+                                        <a href="#" class="btn btn-EditDiscounts">
+                                            <svg id="Compose" xmlns="http://www.w3.org/2000/svg" width="22.209"
+                                                 height="22.209" viewBox="0 0 22.209 22.209">
+                                                <rect id="Rectangle_324" data-name="Rectangle 324" width="22"
+                                                      height="22"
+                                                      transform="translate(0.209)" fill="none"></rect>
+                                                <path id="Path_110" data-name="Path 110"
+                                                      d="M11.318,4.271l-7.9,8.115L0,22.209l9.823-3.2,7.9-7.9ZM21.355,3.63,18.579.854a2.589,2.589,0,0,0-3.844,0L12.386,3.2l6.406,6.62,2.563-2.563a2.707,2.707,0,0,0,.854-1.922A2.636,2.636,0,0,0,21.355,3.63Z"
+                                                      fill="#919191"></path>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>تئاتر قهوه شجری</td>
+                                    <td>تخفیف شب یلدا تئاتر</td>
+                                    <td>teatr_qoqnos</td>
+                                    <td>5%</td>
+                                    <td class="end">اتمام</td>
+                                    <td>1399/9/9_1399/10/10</td>
+                                    <td>
+                                        <a href="#" class="btn btn-EditDiscounts">
+                                            <svg id="Compose" xmlns="http://www.w3.org/2000/svg" width="22.209"
+                                                 height="22.209" viewBox="0 0 22.209 22.209">
+                                                <rect id="Rectangle_324" data-name="Rectangle 324" width="22"
+                                                      height="22"
+                                                      transform="translate(0.209)" fill="none"></rect>
+                                                <path id="Path_110" data-name="Path 110"
+                                                      d="M11.318,4.271l-7.9,8.115L0,22.209l9.823-3.2,7.9-7.9ZM21.355,3.63,18.579.854a2.589,2.589,0,0,0-3.844,0L12.386,3.2l6.406,6.62,2.563-2.563a2.707,2.707,0,0,0,.854-1.922A2.636,2.636,0,0,0,21.355,3.63Z"
+                                                      fill="#919191"></path>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>تئاتر قهوه شجری</td>
+                                    <td>تخفیف شب یلدا تئاتر</td>
+                                    <td>teatr_qoqnos</td>
+                                    <td>5%</td>
+                                    <td>فعال</td>
+                                    <td>1399/9/9_1399/10/10</td>
+                                    <td>
+                                        <a href="#" class="btn btn-EditDiscounts">
+                                            <svg id="Compose" xmlns="http://www.w3.org/2000/svg" width="22.209"
+                                                 height="22.209" viewBox="0 0 22.209 22.209">
+                                                <rect id="Rectangle_324" data-name="Rectangle 324" width="22"
+                                                      height="22"
+                                                      transform="translate(0.209)" fill="none"></rect>
+                                                <path id="Path_110" data-name="Path 110"
+                                                      d="M11.318,4.271l-7.9,8.115L0,22.209l9.823-3.2,7.9-7.9ZM21.355,3.63,18.579.854a2.589,2.589,0,0,0-3.844,0L12.386,3.2l6.406,6.62,2.563-2.563a2.707,2.707,0,0,0,.854-1.922A2.636,2.636,0,0,0,21.355,3.63Z"
+                                                      fill="#919191"></path>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>تئاتر قهوه شجری</td>
+                                    <td>تخفیف شب یلدا تئاتر</td>
+                                    <td>teatr_qoqnos</td>
+                                    <td>5%</td>
+                                    <td class="end">اتمام</td>
+                                    <td>1399/9/9_1399/10/10</td>
+                                    <td>
+                                        <a href="#" class="btn btn-EditDiscounts">
+                                            <svg id="Compose" xmlns="http://www.w3.org/2000/svg" width="22.209"
+                                                 height="22.209" viewBox="0 0 22.209 22.209">
+                                                <rect id="Rectangle_324" data-name="Rectangle 324" width="22"
+                                                      height="22"
+                                                      transform="translate(0.209)" fill="none"></rect>
+                                                <path id="Path_110" data-name="Path 110"
+                                                      d="M11.318,4.271l-7.9,8.115L0,22.209l9.823-3.2,7.9-7.9ZM21.355,3.63,18.579.854a2.589,2.589,0,0,0-3.844,0L12.386,3.2l6.406,6.62,2.563-2.563a2.707,2.707,0,0,0,.854-1.922A2.636,2.636,0,0,0,21.355,3.63Z"
+                                                      fill="#919191"></path>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>تئاتر قهوه شجری</td>
+                                    <td>تخفیف شب یلدا تئاتر</td>
+                                    <td>teatr_qoqnos</td>
+                                    <td>5%</td>
+                                    <td>فعال</td>
+                                    <td>1399/9/9_1399/10/10</td>
+                                    <td>
+                                        <a href="#" class="btn btn-EditDiscounts">
+                                            <svg id="Compose" xmlns="http://www.w3.org/2000/svg" width="22.209"
+                                                 height="22.209" viewBox="0 0 22.209 22.209">
+                                                <rect id="Rectangle_324" data-name="Rectangle 324" width="22"
+                                                      height="22"
+                                                      transform="translate(0.209)" fill="none"></rect>
+                                                <path id="Path_110" data-name="Path 110"
+                                                      d="M11.318,4.271l-7.9,8.115L0,22.209l9.823-3.2,7.9-7.9ZM21.355,3.63,18.579.854a2.589,2.589,0,0,0-3.844,0L12.386,3.2l6.406,6.62,2.563-2.563a2.707,2.707,0,0,0,.854-1.922A2.636,2.636,0,0,0,21.355,3.63Z"
+                                                      fill="#919191"></path>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>تئاتر قهوه شجری</td>
+                                    <td>تخفیف شب یلدا تئاتر</td>
+                                    <td>teatr_qoqnos</td>
+                                    <td>5%</td>
+                                    <td class="end">اتمام</td>
+                                    <td>1399/9/9_1399/10/10</td>
+                                    <td>
+                                        <a href="#" class="btn btn-EditDiscounts">
+                                            <svg id="Compose" xmlns="http://www.w3.org/2000/svg" width="22.209"
+                                                 height="22.209" viewBox="0 0 22.209 22.209">
+                                                <rect id="Rectangle_324" data-name="Rectangle 324" width="22"
+                                                      height="22"
+                                                      transform="translate(0.209)" fill="none"></rect>
+                                                <path id="Path_110" data-name="Path 110"
+                                                      d="M11.318,4.271l-7.9,8.115L0,22.209l9.823-3.2,7.9-7.9ZM21.355,3.63,18.579.854a2.589,2.589,0,0,0-3.844,0L12.386,3.2l6.406,6.62,2.563-2.563a2.707,2.707,0,0,0,.854-1.922A2.636,2.636,0,0,0,21.355,3.63Z"
+                                                      fill="#919191"></path>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="node_modules/persian-date/dist/persian-date.js"></script>
+<script src="node_modules/persian-datepicker/dist/js/persian-datepicker.js"></script>
+<script src="js/nav-responsive.js"></script>
+<script src="js/Discount-codes.js"></script>
+</body>
+</html>

@@ -1,0 +1,607 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'IranSans', sans-serif;
+    line-height: 1;
+    background-color: #F5F6FF;
+}
+
+.font-num {
+    font-family: 'IranSansFaNum', sans-serif;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+button, input {
+    box-shadow: none !important;
+}
+
+.container {
+    max-width: 1330px !important;
+    padding-right: 15px;
+    padding-left: 25px;
+}
+
+.mb-2rem {
+    margin-bottom: 2rem !important;
+}
+
+.pl-2rem {
+    padding-left: 2rem !important;
+}
+
+/*         header id styles         */
+
+#mainHeader {
+    background-color: #fff;
+    padding: 1.5rem 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0 -.5rem 1rem 0 #707070;
+    z-index: 10;
+}
+
+#mainHeader .siteLogo span {
+    font-size: 2.75rem;
+    font-weight: bold;
+    color: #FF0077;
+}
+
+#mainHeader .btn-signUpAndLoginPanel {
+    display: flex;
+    align-items: center;
+}
+
+#mainHeader .btn-signUpAndLoginPanel a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF0077;
+    color: #fff;
+    border-radius: .6rem;
+    font-size: 14px;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    margin-right: 1rem;
+}
+
+#mainHeader .btn-signUpAndLoginPanel .btn-login {
+    padding: .5rem 1.5rem;
+}
+
+/*         Organizer registration Page styles           */
+
+.bg-cart-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to bottom, #FF8080, #FF0077);
+    width: 27%;
+    height: 100%;
+}
+
+#main-content {
+    margin-top: 10rem;
+}
+
+.registrationSteps {
+    position: relative;
+    width: 13%;
+    left: -4%;
+}
+
+.item-registrationSteps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-registrationSteps:not(:last-child) {
+    margin-bottom: 4rem;
+}
+
+.item-registrationSteps.active .bg-number {
+    border: none;
+}
+
+.item-registrationSteps.Don .bg-number {
+    background-color: #FF0077;
+}
+
+#Don {
+    width: 2rem;
+    height: 2rem;
+    display: none;
+}
+
+.item-registrationSteps.Don .number {
+    display: none;
+}
+
+.item-registrationSteps.Don #Don {
+    background-color: #FF0077;
+    display: inline-block;
+}
+
+.text-item-registrationSteps {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.bg-number {
+    min-width: 3.25rem;
+    height: 3.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    border: 5px solid #FF0077;
+    border-radius: 50%;
+    z-index: 2;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: IRANSansFaNum, sans-serif;
+    overflow: hidden;
+}
+
+.boxContent {
+    width: 85%;
+    min-height: 31rem;
+    max-height: 31rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+    border-radius: .75rem;
+    padding: 2rem 0 2rem 7rem;
+    z-index: 1;
+}
+
+.boxContent::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5 !important;
+    -webkit-border-radius: 1rem !important;
+    border-radius: 1rem !important;
+}
+
+.boxContent::-moz-viewport-scroll {
+    width: 6px !important;
+    background-color: #F5F5F5 !important;
+    -webkit-border-radius: 1rem !important;
+    border-radius: 1rem !important;
+}
+
+.boxContent::-webkit-scrollbar-thumb {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF8080), to(#FF0077)) !important;
+    background: -webkit-linear-gradient(top, #FF8080, #FF0077) !important;
+    background: linear-gradient(to bottom, #FF8080, #FF0077) !important;
+    -webkit-border-radius: 1.5rem !important;
+    border-radius: 1.5rem !important;
+}
+
+.boxContent::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+    background-color: #F5F5F5 !important;
+    -webkit-border-radius: 1.5rem !important;
+    border-radius: 1.5rem !important;
+}
+
+.boxContent header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #585858;
+}
+
+.boxContent header p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.75rem;
+    max-width: 100%;
+    color: #84848499;
+}
+
+.boxLabelAndRadioButton {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+}
+
+.boxLabelAndRadioButton label {
+    margin: 0 .5rem 0 1.5rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: #585858;
+}
+
+#content-form-legalPerson {
+    display: none;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #585858;
+    margin-right: .75rem;
+    margin-left: 1rem;
+}
+
+form input {
+    height: 2.75rem !important;
+    background-color: #F4F5FE !important;
+    font-size: 1.3rem;
+    border: 1px solid #F4F5FE !important;
+    border-radius: .5rem !important;
+    outline: none !important;
+    box-shadow: none !important;
+    transition-duration: .4s;
+}
+
+form input[type="number"] {
+    direction: ltr;
+    font-family: IRANSansFaNum, sans-serif;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    -moz-appearance: textfield !important;
+}
+
+form input[type="number"]::-webkit-inner-spin-button,
+form input[type="number"]::-webkit-outer-spin-button {
+    display: none !important;
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+.input-group-select {
+    display: flex;
+    flex-direction: column;
+}
+
+#YearOfBirth, #EstablishedYear {
+    text-align: end;
+}
+
+select {
+    position: relative;
+    background-color: #F4F5FE !important;
+    color: #7E7E7E !important;
+    font-size: 1rem;
+    font-weight: 500 !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 .5rem !important;
+    height: 2.75rem !important;
+    border-radius: .5rem !important;
+    cursor: pointer;
+}
+
+select {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    -moz-appearance: none !important;
+}
+
+#arrow-bottom {
+    position: absolute;
+    left: 1.5rem;
+    top: 2.2rem;
+    pointer-events: none;
+}
+
+.invalid-message {
+    font-size: .9rem;
+    font-weight: 500;
+    color: red;
+    margin: .5rem;
+}
+
+.btn-ConfirmAndContinue {
+    background-color: #00E200;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    width: 8.5rem;
+    border: none;
+    padding: 6px;
+    transition: all .2s ease;
+    outline: none !important;
+    text-transform: uppercase;
+}
+
+/*         Send real person documents Page styles           */
+
+div[class="col-5"] {
+    display: flex;
+    flex-direction: column;
+}
+
+.Title-SendDocuments {
+    color: #585858;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.Explanation-SendDocuments {
+    color: #84848499;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.MaximumVolume-SendDocuments {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.MaximumVolume-SendDocuments span:nth-of-type(1) {
+    color: #84848499;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.MaximumVolume-SendDocuments span:nth-of-type(2) {
+    color: #848484;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/*         Send legal entity input and Send real entity input 1          */
+
+.file-upload-btn {
+    width: 8.5rem;
+    color: #fff;
+    background: #FF0077;
+    border: none;
+    padding: 10px 10px;
+    border-radius: .5rem;
+    transition: all .2s ease;
+    outline: none !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: auto;
+}
+
+.file-upload {
+    background-color: #F4F5FE;
+    width: 20rem;
+    height: 9rem;
+    max-height: 9rem;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.file-upload-content {
+    display: none;
+    text-align: center;
+}
+
+.file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-upload-wrap {
+    margin-top: 20px;
+    position: relative;
+}
+
+.drag-svg {
+    text-align: center;
+}
+
+.file-upload-image {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+
+/*         Send legal entity input 2 and Send real entity input 2        */
+
+.file-upload2 {
+    background-color: #F4F5FE;
+    width: 20rem;
+    height: 9rem;
+    max-height: 9rem;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.file-upload-content2 {
+    display: none;
+    text-align: center;
+}
+
+.file-upload-input2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-upload-wrap2 {
+    margin-top: 20px;
+    position: relative;
+}
+
+.file-upload-image2 {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+
+/*         Send real entity input 3          */
+
+.file-upload3 {
+    background-color: #F4F5FE;
+    width: 20rem;
+    height: 9rem;
+    max-height: 9rem;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.file-upload-content3 {
+    display: none;
+    text-align: center;
+}
+
+.file-upload-input3 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-upload-wrap3 {
+    margin-top: 20px;
+    position: relative;
+}
+
+.file-upload-image3 {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+
+/**/
+/*         Awaiting approval Page styles           */
+
+.boxContent-Awaiting-approval {
+    overflow: hidden;
+}
+
+#svg-Awaiting-approvalPage {
+    width: 18rem;
+    height: 20rem;
+}
+
+.btn-ReturnToSite {
+    background-color: #fff;
+    box-shadow: 0 5px 1rem 0 #00000030;
+    border-radius: .5rem;
+    height: 2rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/*                  media queries                    */
+
+@media (min-width: 993px) and (max-width: 1280px) {
+    .registrationSteps {
+        width: 15%;
+        left: -2%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .bg-cart-left {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(to bottom, #FF8080, #FF0077);
+        width: 100%;
+        height: 45%;
+    }
+
+    .registrationSteps {
+        position: relative;
+        width: 80%;
+        left: 0;
+        bottom: -1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .item-registrationSteps {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0 !important;
+    }
+
+    .text-item-registrationSteps {
+        margin-bottom: 1rem;
+    }
+
+    .boxContent div[class="col-5"] {
+        max-width: 100% !important;
+        flex: none;
+        align-items: center;
+    }
+
+    .boxContent div[class="col-6"] {
+        display: none;
+    }
+
+}
+
+@media (max-width: 786px) {
+    .boxContent-Awaiting-approval {
+        max-height: initial;
+    }
+}
+
+@media (max-width: 576px) {
+    #mainHeader .siteLogo span {
+        font-size: 20px;
+    }
+
+    .text-item-registrationSteps {
+        font-size: .85rem;
+    }
+}

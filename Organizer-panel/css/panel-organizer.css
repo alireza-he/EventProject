@@ -1,0 +1,2895 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'IranSans', sans-serif;
+    line-height: 1;
+    background-color: #F5F6FF;
+}
+
+.font-num {
+    font-family: 'IRANSansFaNum', sans-serif;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+button, input {
+    box-shadow: none !important;
+}
+
+.container {
+    max-width: 1435px !important;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.mb-2rem {
+    margin-bottom: 2rem !important;
+}
+
+.invalid-message {
+    font-size: .9rem;
+    font-weight: 500;
+    color: red;
+    margin: .5rem;
+}
+
+input[type=number] {
+    direction: ltr;
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    display: none !important;
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+/*         header id styles         */
+
+#mainHeader {
+    background-color: #fff;
+    padding: 1.25rem 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0 -.5rem 1rem 0 #707070;
+    z-index: 10;
+}
+
+#mainHeader .siteLogo span {
+    font-size: 31px;
+    font-weight: bold;
+    color: #FF0077;
+}
+
+#mainHeader .btn-signUpAndLoginPanel a {
+    background-color: #FF0077;
+    color: #fff;
+    border-radius: .75rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: .375rem 1.25rem;
+    margin-right: 1.5rem;
+}
+
+#mainHeader .avatar {
+    width: 61px;
+    height: 61px;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+#mainHeader .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#mainHeader #bars-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#nav-close-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+#mainHeader .list a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2.5rem;
+    transition: .4s;
+}
+
+#mainHeader .list a:hover svg {
+    color: #fff !important;
+}
+
+#mainHeader .list a svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+#mainHeader .list a span {
+    font-size: 10px;
+    color: #D5D5D5;
+}
+
+#mainHeader .input-search {
+    position: relative;
+    background-color: #F5F6FF;
+    padding: 0.25rem 1.5rem;
+    border-radius: 1.5rem !important;
+    border: none;
+    height: 2.5rem;
+}
+
+#mainHeader .search-icon {
+    position: absolute;
+    top: .6rem;
+    left: 2.5rem;
+    cursor: pointer;
+}
+
+#bg-icons {
+    position: absolute;
+    left: -.5rem;
+    display: none;
+}
+
+#nav {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    right: -300px;
+    width: 300px;
+    max-width: 300px;
+    max-height: 100vh;
+    padding-top: 20px !important;
+    line-height: 2.5em;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    z-index: 99;
+    font-size: 15px;
+}
+
+#nav #scroll {
+    overflow-y: scroll;
+    max-height: 38rem;
+    scrollbar-color: #FF0077 #fff;
+    scrollbar-width: thin;
+}
+
+#nav #scroll::-webkit-scrollbar {
+    width: 6px;
+    background-color: white !important;
+}
+
+#nav #scroll::-webkit-scrollbar {
+    width: 6px !important;
+    opacity: 0;
+}
+
+#nav:hover #scroll::-webkit-scrollbar-thumb {
+    background-color: #FF0077 !important;
+    border-radius: 1rem;
+}
+
+#nav:hover #scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px white !important;
+    background-color: white !important;
+    border-radius: 1rem;
+}
+
+#nav #logo {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 0;
+}
+
+#nav #logo img {
+    max-width: 100%;
+    height: 100%;
+}
+
+#nav li {
+    color: #424858;
+    padding: 0 20px;
+}
+
+#nav a div {
+    color: #424858;
+    padding: 0 20px;
+}
+
+#nav .icon-nav {
+    width: 3rem;
+    height: auto;
+}
+
+#nav .collapseLinks a {
+    padding: 0 1.3rem !important;
+}
+
+/*                      navBar-panel styles                    */
+
+#navBar-panel {
+    padding-top: 1rem;
+    position: sticky;
+    top: 7rem;
+    width: 16rem;
+    height: max-content;
+}
+
+#navBar-panel li {
+    padding-bottom: 1rem;
+}
+
+#navBar-panel li a {
+    padding: 0.4rem 0;
+}
+
+#navBar-panel li .bg-icons {
+    background-color: #E5E5E5;
+    min-width: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+#navBar-panel li svg, #nav li svg {
+    width: 16px;
+    height: 16px;
+}
+
+#navBar-panel li svg path, #nav li svg path {
+    fill: #FF0077;
+}
+
+#navBar-panel li svg[class~="fa-angle-down"], #nav li svg[class~="fa-angle-down"] {
+    width: 15px;
+    height: 15px;
+}
+
+#navBar-panel li svg[class~="fa-angle-down"] path, #nav li svg[class~="fa-angle-down"] path {
+    fill: #FF0077 !important;
+}
+
+#navBar-panel li a.activeLinkPanelOrganizer .bg-icons {
+    background-color: #FF0077;
+}
+
+#navBar-panel li a.activeLinkPanelOrganizer svg path {
+    fill: #fff;
+}
+
+#navBar-panel li a.activeLinkPanelOrganizer svg circle {
+    fill: #fff;
+}
+
+#navBar-panel li a.activeLinkPanelOrganizer svg ellipse {
+    fill: #fff;
+}
+
+#navBar-panel li a.activeLinkPanelOrganizer svg rect {
+    fill: #fff;
+}
+
+#navBar-panel li a[href="Inbox.html"].activeLinkPanelOrganizer svg rect {
+    fill: #FF0077 !important;
+}
+
+#navBar-panel li a[href="Register-a-new-event.html"].activeLinkPanelOrganizer svg rect {
+    fill: #FF0077 !important;
+}
+
+#navBar-panel li a[href="about-us.html"].activeLinkPanelOrganizer svg rect {
+    fill: #FF0077 !important;
+}
+
+#navBar-panel li a[href="file-management.html"].activeLinkPanelOrganizer svg rect {
+    fill: none !important;
+}
+
+#navBar-panel li a.activeLinkPanelOrganizer .title {
+    color: #000;
+    font-weight: bold;
+}
+
+#navBar-panel li a .title, #nav li a .title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #616161;
+}
+
+.bg-avatar_navBar-panel {
+    width: 6rem;
+    margin-bottom: 1rem;
+}
+
+.name-user-navBar-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.name-user-navBar-panel h1 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-right: .5rem;
+}
+
+.name-user-navBar-panel .bg-icon-nameEdit {
+    width: 1.75rem;
+    height: 1.75rem;
+    background-color: #fff;
+    border-radius: .25rem;
+    box-shadow: 0 0 .5rem 0 #00000025;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .75rem;
+}
+
+.collapseLinks {
+    padding: 0 2.5rem;
+}
+
+.collapseLinks a {
+    background-color: #F5F5F5;
+    width: 10.5rem !important;
+    font-size: 15px;
+    font-weight: 500;
+    color: #828282;
+    padding: .7rem 1.3rem !important;
+    border-radius: 1rem;
+    margin-bottom: .25rem;
+}
+
+/*          main-content id styles           */
+
+.Bg-white {
+    overflow: hidden;
+    background-color: #fff !important;
+    border-radius: .75rem;
+    box-shadow: 0 3px 1rem 0 #70707030 !important;
+}
+
+#main-content {
+    margin-top: 8rem;
+}
+
+
+/*            Landing page styles              */
+
+
+.container-LandingPage {
+    max-width: 1330px !important;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 25px;
+    margin: 0 auto;
+}
+
+#mainHeader-LandingPage {
+    background-color: #fff;
+    padding: 1.5rem 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0 -.5rem 1rem 0 #707070;
+    z-index: 10;
+}
+
+#mainHeader-LandingPage .siteLogo-LandingPage span {
+    font-size: 2.75rem;
+    font-weight: bold;
+    color: #FF0077;
+}
+
+#mainHeader-LandingPage .btn-signUpAndLoginPanel {
+    display: flex;
+    align-items: center;
+}
+
+#mainHeader-LandingPage .btn-signUpAndLoginPanel a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF0077;
+    color: #fff;
+    border-radius: .6rem;
+    font-size: 14px;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    margin-right: 1rem;
+}
+
+#mainHeader-LandingPage .btn-signUpAndLoginPanel .btn-login {
+    padding: .5rem 1.5rem;
+}
+
+
+#main-content .row-rtl, #main-content .row-ltr {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19rem 0 0 0;
+}
+
+#main-content .row-ltr {
+    direction: ltr;
+    padding: 19rem 0 10rem 0;
+}
+
+#main-content .row-rtl .titleAndText {
+    z-index: 2;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+#main-content .row-ltr .titleAndText {
+    z-index: 2;
+    margin: -2rem 0 0 -6rem;
+    padding: 0;
+}
+
+#main-content h1.title {
+    color: #1F1E5D;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+#main-content .text {
+    color: #848484;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    padding-left: 7rem;
+}
+
+#main-content .row-rtl .bg-svg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 5rem;
+}
+
+#main-content .row-ltr .bg-svg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: inherit;
+    margin-top: 5rem;
+}
+
+#main-content .row-rtl .bg-svg svg {
+    position: absolute;
+    left: -5rem;
+    width: 80vw;
+}
+
+#main-content .row-ltr .bg-svg svg {
+    position: absolute;
+    right: -5rem;
+    width: 75vw;
+}
+
+#main-content .btn-CreateAnOrganizerAccount a {
+    background-color: #FF0077;
+    color: #fff;
+    border-radius: .75rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: .8rem 4rem;
+    margin-bottom: 10rem;
+}
+
+/*            part left in Dashboard organizer page styles              */
+#partLeft .card-DashboardOrganizer div[class~=col-12] {
+    padding: 0 !important;
+}
+
+#partLeft div[ class="col-lg-6 col-12"] {
+    margin-bottom: 1.5rem;
+}
+
+#partLeft {
+    width: 78%;
+}
+
+#partLeft .card-DashboardOrganizer {
+    padding: 1rem 1.5rem 0;
+}
+
+#partLeft .header-card-DashboardOrganizer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: .5rem;
+}
+
+#partLeft .header-card-DashboardOrganizer h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #727272;
+}
+
+#partLeft .header-card-DashboardOrganizer .Condition-card-DashboardOrganizer {
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 3px .25rem 0 #00000020;
+    width: 6.5rem;
+    height: 1.5rem;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ACACAC;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#partLeft .content-card-DashboardOrganizer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#partLeft .content-card-DashboardOrganizer .scroll-y {
+    overflow-y: scroll;
+    max-height: 32rem;
+    scrollbar-color: #FF87BF #fff;
+    scrollbar-width: thin;
+}
+
+#partLeft .content-card-DashboardOrganizer .scroll-y::-webkit-scrollbar {
+    width: 6px;
+    background-color: #fff;
+}
+
+#partLeft .content-card-DashboardOrganizer .scroll-y::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: #FF87BF;
+}
+
+#partLeft .content-card-DashboardOrganizer .table-responsive {
+    box-shadow: none;
+}
+
+#partLeft .content-card-DashboardOrganizer thead {
+    font-size: 14px;
+    color: #ACACAC;
+    border-top: 1px solid #00000020;
+    background: #fff;
+}
+
+#partLeft .content-card-DashboardOrganizer table thead th {
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+#partLeft .content-card-DashboardOrganizer table {
+    overflow: scroll;
+    height: 10rem;
+}
+
+#partLeft .content-card-DashboardOrganizer table tbody {
+    font-family: IRANSansFaNum, sans-serif;
+}
+
+#partLeft .content-card-DashboardOrganizer table tbody tr:nth-of-type(even) {
+    background-color: #fff;
+}
+
+#partLeft .content-card-DashboardOrganizer table tbody .bg-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-left: .5rem;
+}
+
+#partLeft .content-card-DashboardOrganizer table tbody .bg-image img {
+    width: auto;
+    height: 100%;
+}
+
+#partLeft .content-card-DashboardOrganizer table tbody td {
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 1.25rem 0;
+    color: #ACACAC;
+    vertical-align: middle;
+    border-top: 1px solid #00000020;
+}
+
+#partLeft .content-card-DashboardOrganizer table tbody td:nth-of-type(1) {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+    color: #414141;
+}
+
+#partLeft .content-card-DashboardOrganizer table tbody td:nth-of-type(5) span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    background-color: #71CE91;
+    color: #fff;
+    border-radius: .5rem;
+    white-space: nowrap;
+    width: 4.2rem;
+    height: 1.5rem;
+    margin: 0 auto;
+}
+
+#partLeft .content-card-DashboardOrganizer table tbody .Checkout {
+    background-color: #FF8080 !important;
+}
+
+#partLeft .averageScoreAndTotalNumberOfVoters {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 1.5rem;
+}
+
+#partLeft .averageScoreAndTotalNumberOfVoters .averageScore span:nth-of-type(1) {
+    font-size: 2.6rem;
+    font-weight: bold;
+    font-family: IRANSansFaNum, sans-serif;
+    color: #606060;
+}
+
+#partLeft .averageScoreAndTotalNumberOfVoters .averageScore span:nth-of-type(2), #partLeft .averageScoreAndTotalNumberOfVoters .TotalNumberOfVoters span:nth-of-type(2) {
+    font-size: 10px;
+    font-weight: bold;
+    color: #ACACAC;
+}
+
+#partLeft .averageScoreAndTotalNumberOfVoters .score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: .75rem;
+}
+
+#partLeft .averageScoreAndTotalNumberOfVoters .score .star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    width: 30px;
+    font-size: 23px;
+    padding: 10px 5px;
+}
+
+#partLeft .averageScoreAndTotalNumberOfVoters .score .star svg {
+    color: #FFB300;
+}
+
+#partLeft .averageScoreAndTotalNumberOfVoters .TotalNumberOfVoters span:nth-of-type(1) {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: IRANSansFaNum, sans-serif;
+    color: #ACACAC;
+}
+
+#partLeft .content-card-DashboardOrganizer .progressBars .item-progressBars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .7rem;
+}
+
+#partLeft .content-card-DashboardOrganizer .progress {
+    width: 100%;
+    direction: ltr;
+    height: 8px;
+    background-color: #F5F6FF;
+}
+
+#partLeft .content-card-DashboardOrganizer .bg-color {
+    background-color: #00E200 !important;
+}
+
+#partLeft .content-card-DashboardOrganizer .item-progressBars .starNumber {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+#partLeft .content-card-DashboardOrganizer .item-progressBars .starNumber span:nth-of-type(1) {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: IRANSansFaNum, sans-serif;
+    color: #ACACAC;
+}
+
+#partLeft .content-card-DashboardOrganizer .item-progressBars .starNumber span:nth-of-type(2) {
+    font-size: 8px;
+    color: #CCCCCC;
+}
+
+#partLeft .commentUser {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-top: 1px solid #00000020;
+    padding: .75rem 0 0 0;
+
+}
+
+#partLeft .commentUser .avatarUser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-width: 3rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+#partLeft .commentUser .content-commentUser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#partLeft .commentUser .content-commentUser .nameAndLikeAndDislike {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#partLeft .commentUser .nameAndLikeAndDislike .nameAndEvent {
+    display: flex;
+    flex-direction: column;
+}
+
+#partLeft .commentUser .nameAndLikeAndDislike .nameAndEvent span {
+    margin-bottom: .5rem;
+}
+
+#partLeft .commentUser .nameAndLikeAndDislike .nameAndEvent span:nth-of-type(1) {
+    color: #828282;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#partLeft .commentUser .nameAndLikeAndDislike .nameAndEvent span:nth-of-type(2) {
+    color: #B5B5B5;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#partLeft .commentUser .likeAndDislike {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: IRANSansFaNum, sans-serif;
+    margin: 0 2rem;
+}
+
+#partLeft .commentUser .likeAndDislike .like {
+    margin-left: 1rem;
+}
+
+#partLeft .commentUser .likeAndDislike .like, #partLeft .commentUser .likeAndDislike .dislike {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#partLeft .commentUser .likeAndDislike .like span, #partLeft .commentUser .likeAndDislike .dislike span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ACACAC;
+    margin-left: .25rem;
+}
+
+#partLeft .commentUser .likeAndDislike .like svg, #partLeft .commentUser .likeAndDislike .dislike svg {
+    width: 1rem;
+}
+
+#partLeft .commentUser .content-commentUser .buttons-ConfirmationAndRejectComments {
+    display: flex;
+}
+
+#partLeft .commentUser .content-commentUser .buttons-ConfirmationAndRejectComments button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 13px;
+    padding: 3px .5rem;
+}
+
+#partLeft .commentUser .content-commentUser .buttons-ConfirmationAndRejectComments .btn-RejectComments {
+    background-color: #FF8080;
+    margin: 0 1rem;
+}
+
+#partLeft .commentUser .content-commentUser .buttons-ConfirmationAndRejectComments .btn-Confirmation {
+    background-color: #71CE91;
+}
+
+#partLeft .commentUser .content-commentUser .text-commentUser {
+    font-size: 15px;
+    line-height: 1.5rem;
+    color: #B5B5B5;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/*                  about us page styles                   */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+header .title-and-icon-header {
+    display: flex;
+    align-items: center;
+}
+
+header .bg-headerTag-icon {
+    background-color: #fff;
+    box-shadow: 0 3px .25rem 0 #00000015;
+    min-width: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+header .bg-headerTag-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+header .bg-headerTag-icon svg path {
+    fill: #FF0077;
+}
+
+header .bg-headerTag-icon svg ellipse {
+    fill: #FF0077;
+}
+
+header h2 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.card-aboutUsOrganizer {
+    padding: 2rem 2rem 1.5rem;
+}
+
+#OrganizerName, #ABriefDescriptionOfYourActivity {
+    background-color: #E8E8E8 !important;
+    color: #343434 !important;
+    font-size: 1rem;
+    border-radius: .5rem !important;
+    border: 1px solid #E8E8E8;
+    padding: .75rem 1.5rem !important;
+}
+
+.CommunicationWithUsers input {
+    background-color: #E8E8E8 !important;
+    color: #343434;
+    font-size: 1rem;
+    border-radius: .5rem;
+    border: 1px solid #E8E8E8;
+    padding: .75rem 1.5rem;
+    height: 3rem !important;
+}
+
+#OrganizerName::placeholder, #ABriefDescriptionOfYourActivity::placeholder {
+    font-size: 1.35rem;
+    font-weight: 500 !important;
+    color: #34343480;
+}
+
+#OrganizerName {
+    height: 3.4rem !important;
+    margin-bottom: 1.25rem;
+}
+
+#ABriefDescriptionOfYourActivity {
+    height: 7.9rem !important;
+}
+
+.Title-logoOrganizer {
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+    color: #404040;
+}
+
+.text-logoOrganizer {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #8E8E8E;
+}
+
+.file-upload {
+    background-color: #E3E3E3;
+    width: 13rem;
+    height: 13rem;
+    max-height: 13rem;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .75rem;
+}
+
+.file-upload-content {
+    display: none;
+    text-align: center;
+}
+
+.file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-upload-wrap {
+    position: relative;
+}
+
+.drag-svg {
+    text-align: center;
+}
+
+.file-upload-image {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+
+.file-upload-btn {
+    width: 10.5rem;
+    color: #fff;
+    background: #FF0077;
+    border: none;
+    padding: 12px 10px;
+    border-radius: .5rem;
+    transition: all .2s ease;
+    outline: none !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 26% auto 1rem 2rem;
+}
+
+#AddContent {
+    height: 50vh;
+    background-color: #fff !important;
+    color: #343434 !important;
+    font-size: 1rem;
+    border-radius: .75rem !important;
+    border: none !important;
+    box-shadow: 0 3px 1rem 0 #00000020 !important;
+    padding: 1.5rem !important;
+}
+
+#AddContent::placeholder {
+    font-size: 1.5rem;
+    font-weight: 500 !important;
+    color: #727272;
+}
+
+.box-chooseFile {
+    padding: 2rem 1.5rem 1rem;
+    margin-bottom: 4rem;
+}
+
+.box-chooseFile .file-upload-btn {
+    width: 14rem;
+    color: #fff;
+    background: #FF0077;
+    border: none;
+    padding: 12px 10px;
+    border-radius: .5rem;
+    transition: all .2s ease;
+    outline: none !important;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 0 1.5rem 0;
+}
+
+.box-chooseFile .Title-chooseFile {
+    color: #727272;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.btn-AddChanges {
+    background-color: #00E200;
+    color: #fff !important;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: .5rem;
+    width: 14rem;
+    border: none;
+    padding: 7px;
+    outline: none !important;
+    margin-bottom: 3rem;
+}
+
+
+/*                  Register a new event organizer page styles                   */
+
+
+.card-RegisterANewEvent {
+    padding: 2rem 2rem 2rem 2.5rem;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.input-group-select {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    height: 3.75rem !important;
+    background-color: #F5F5F5 !important;
+    font-size: 1.3rem;
+    border: 1px solid #F5F5F5 !important;
+    border-radius: .75rem !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 1.5rem !important;
+    transition-duration: .4s;
+}
+
+form label {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #606060;
+    margin-right: 1.5rem;
+}
+
+select {
+    position: relative;
+    background-color: #F5F5F5 !important;
+    color: #7E7E7E90 !important;
+    font-size: 1.3rem;
+    font-weight: 500 !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 2.5rem !important;
+    height: 3.75rem !important;
+    border-radius: .75rem !important;
+    cursor: pointer;
+}
+
+select {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    -moz-appearance: none !important;
+}
+
+#arrow-bottom {
+    position: absolute;
+    left: 7%;
+    top: 2.7rem;
+    pointer-events: none;
+}
+
+.pertRight-eventCoverChooseBox {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-RegisterANewEvent .file-upload {
+    background-color: #F5F5F5;
+    width: auto;
+    min-height: 18rem;
+    height: 21rem;
+    max-height: 21rem;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .75rem;
+}
+
+.pertRight-eventCoverChooseBox .file-upload-btn {
+    width: 11rem;
+    padding: 14px 10px;
+    font-size: 17px;
+    margin: auto 0 0 0;
+    border-radius: 1.5rem;
+}
+
+.line-pertRight-eventCoverChooseBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.circle {
+    width: .5rem;
+    min-width: .5rem;
+    height: .5rem;
+    background: #FF0077;
+    border-radius: 50%;
+    margin-left: .5rem;
+}
+
+.line-pertRight-eventCoverChooseBox span {
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: IRANSansFaNum, sans-serif;
+    color: #707070;
+}
+
+#EventDescription input, #FurtherInformation input {
+    border-radius: 0 !important;
+    height: 3.5rem !important;
+}
+
+textarea {
+    position: relative;
+    background-color: #F5F5F5 !important;
+    color: #7E7E7E90 !important;
+    font-size: 1.3rem;
+    font-weight: 500 !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 1.5rem 2.5rem !important;
+    border-radius: .75rem !important;
+}
+
+textarea#AdditionalExplanation {
+    height: 8rem;
+    border-radius: 0 !important;
+}
+
+.btn-AddNewItem {
+    width: 11rem;
+    padding: 14px 10px;
+    font-size: 17px;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+    color: #fff;
+    background: #FF0077;
+    border: none;
+    transition: all .2s ease;
+    outline: none !important;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn-RecordInformationAndContinue {
+    background-color: #00E200;
+    color: #fff !important;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: .5rem;
+    width: 16rem;
+    border: none;
+    padding: 7px;
+    outline: none !important;
+    margin-bottom: 3rem;
+    margin-right: 5rem;
+}
+
+.btn-cancel {
+    background-color: transparent;
+    color: #707070 !important;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: .5rem;
+    width: 9rem;
+    border: none;
+    padding: 7px;
+    outline: none !important;
+    margin-bottom: 3rem;
+}
+
+/*                        ُselect the event styles                           */
+
+header .btn-DefineANewSalon {
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 3px .25rem 0 #00000010;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #646464;
+    padding: .5rem 1rem;
+    white-space: nowrap;
+}
+
+header .btn-DefineANewSalon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: .5rem;
+}
+
+.SalonServices {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.5rem 2rem 0 2rem;
+    overflow-y: scroll !important;
+    max-height: 20rem;
+    scrollbar-color: #FF0077 #fff;
+    scrollbar-width: thin;
+}
+
+.SalonServices::-webkit-scrollbar {
+    width: 6px;
+    background-color: #fff;
+    margin: 0;
+}
+
+.SalonServices::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: #FF0077;
+    border-radius: 1rem;
+}
+
+.SalonServices .item-SelectedHalls {
+    background-color: #F5F6FF;
+    width: 7.25rem;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 1.5rem 2rem;
+    box-shadow: 0 3px .25rem 0 #00000020;
+}
+
+.SalonServices .item-SelectedHalls span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #848484;
+}
+
+/*                  Sales information page styles                   */
+
+#EventStart, #EndEvent, #NumberOfTickets, #NumberOfChances {
+    height: 4rem !important;
+}
+
+.row-TicketDefinition {
+    margin-bottom: 1rem;
+}
+
+.row-TicketDefinition .dateBox-TicketDefinition {
+    position: relative;
+    width: 13.5rem;
+    margin: 0 2rem;
+    height: 3rem !important;
+}
+
+.row-TicketDefinition .dateBox-TicketDefinition #dateInput-TicketDefinition {
+    height: 3rem !important;
+    padding: 0 1rem !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.row-TicketDefinition .dateBox-TicketDefinition #arrow-bottom {
+    top: 25%;
+    left: 4%;
+}
+
+.row-TicketDefinition .btn-AddAChance, .btn-AddAChance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #495057;
+    white-space: nowrap;
+}
+
+.row-TicketDefinition .btn-AddAChance svg, .btn-AddAChance svg {
+    margin-left: .25rem;
+}
+
+.row-TicketDefinition .btn-AddAChance svg path, .btn-AddAChance svg path {
+    fill: #f07;
+}
+
+.item-TicketDefinition {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 1rem 0 1rem .5rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.item-TicketDefinition div {
+    padding: 0 8px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-TicketDefinition .inputs {
+    width: 45%;
+}
+
+.item-TicketDefinition .timeAndBtn-SelectAPlan-part {
+    width: 54%;
+}
+
+.item-TicketDefinition .time {
+    width: 41%;
+}
+
+.item-TicketDefinition .btn-SelectAPlan-part {
+    width: 32%;
+    justify-content: flex-end;
+    padding: 0 3rem !important;
+}
+
+.item-TicketDefinition input[type="checkbox"] {
+    margin-left: 1.75rem;
+    border-radius: .75rem !important;
+}
+
+.container-input {
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0 .25rem 0 0;
+}
+
+.checkMark {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    height: 23px;
+    width: 23px;
+    border-radius: .3rem;
+    background-color: #F5F5F5;
+    border: 1px solid #848484;
+}
+
+input:checked ~ .checkMark {
+    background-color: #FF0077;
+}
+
+.checkMark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+input:checked ~ .checkMark:after {
+    display: block;
+}
+
+.checkMark:after {
+    left: 7.5px;
+    top: 2.5px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.item-TicketDefinition input {
+    height: 3rem !important;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 1rem !important;
+}
+
+.item-TicketDefinition input::placeholder {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ABABAB;
+}
+
+.item-TicketDefinition .SansStartTime, .item-TicketDefinition .SansEndTime {
+    background-color: #F5F5F5;
+    min-width: 5.5rem;
+    height: 3rem;
+    border-radius: .75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15rem;
+    font-weight: bold;
+    font-family: IRANSansFaNum, sans-serif;
+    color: #606060;
+}
+
+.item-TicketDefinition .Word-to {
+    margin: 0 .5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ABABAB;
+}
+
+.item-TicketDefinition .btn-SelectAPlan {
+    min-width: 8.5rem;
+    height: 3rem;
+    background-color: #fff;
+    color: #646464;
+    border-radius: .75rem;
+    box-shadow: 0 3px .25rem 0 #00000020 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: .25rem;
+}
+
+/*                  Inbox organizer page styles                   */
+header .btn-Simple {
+    display: flex;
+    align-items: center;
+    height: 2.75rem !important;
+    background-color: #fff !important;
+    color: #646464 !important;
+    border-radius: .5rem !important;
+    box-shadow: 0 3px .5rem 0 #00000015 !important;
+    padding: .375rem 1rem !important;
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+}
+
+header #btn-delete {
+    display: flex;
+    align-items: center;
+    height: 2.75rem !important;
+    background-color: #fff;
+    color: #646464 !important;
+    border-radius: .5rem !important;
+    box-shadow: none !important;
+    padding: .375rem 1rem !important;
+    font-size: 1.1rem !important;
+    font-weight: 500;
+    margin: 0 1rem;
+}
+
+header button svg, header .box-selectorArrangeMessages .bg-iconAngleDown svg path {
+    color: #FF0077;
+    font-size: 1.1rem;
+    margin-left: 8px;
+}
+
+header .box-selectorArrangeMessages {
+    position: relative;
+}
+
+header select {
+    background-color: white !important;
+    color: #646464 !important;
+    font-size: 1.1rem !important;
+    padding: .75rem .75rem .75rem 2.5rem !important;
+    height: 2.75rem !important;
+    border-radius: .5rem !important;
+}
+
+header select option {
+    color: #646464;
+}
+
+header .box-selectorArrangeMessages .bg-iconAngleDown {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    border-right: 1px solid #00000020;
+    padding-right: .5rem;
+    pointer-events: none;
+}
+
+.list-group-item {
+    background-color: #ECEEFF !important;
+    color: #707070 !important;
+    font-size: 1.5rem !important;
+    font-weight: 500;
+    border: none;
+    padding: 1rem 1.75rem;
+    border-radius: .75rem .75rem 0 0 !important;
+    width: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .75rem;
+    white-space: nowrap;
+}
+
+.list-group-item.active {
+    background-color: #fff !important;
+    border-radius: .75rem .75rem 0 0;
+}
+
+.list-group-item + .list-group-item.active {
+    margin-top: 0;
+}
+
+#nav-tabContent #messagesAll .notification:nth-of-type(1), #nav-tabContent #notifications .notification:nth-of-type(1), #nav-tabContent #conversationWithUsers .notification:nth-of-type(1) {
+    border-radius: 1rem 0 1rem 1rem !important;
+}
+
+.item-notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1rem 1.5rem;
+    background-color: #fff !important;
+    box-shadow: 0 20px 2rem 0 #00000050 !important;
+    cursor: pointer;
+}
+
+.item-notification svg {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    opacity: 0;
+}
+
+.notification:hover .item-notification svg {
+    opacity: 1;
+}
+
+.avatarAndTexts-item-notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatarAndTexts-item-notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatarAndTexts-item-notification .bg-avatar {
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.5rem;
+    margin-left: 1rem;
+    box-shadow: 0 5px .75rem 0 #00000030;
+}
+
+.avatarAndTexts-item-notification .texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatarAndTexts-item-notification .texts .title-item-notification {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #505050;
+    margin-bottom: .75rem;
+}
+
+.avatarAndTexts-item-notification .texts .labelTitle-item-notification {
+    font-size: .8rem;
+    font-weight: 600;
+    color: #919191;
+}
+
+.avatarAndTexts-item-notification .texts .labelTitle-item-notification {
+    font-family: IRANSansFaNum, sans-serif;
+}
+
+.contentCollapse-talkToTheOrganizer {
+    position: relative;
+    background-color: #F5F6FF;
+}
+
+.contentCollapse-talkToTheOrganizer .dayDate {
+    width: 100%;
+    display: none;
+    justify-content: center;
+}
+
+.contentCollapse-talkToTheOrganizer .dayDate span {
+    position: absolute;
+    top: 2rem;
+    background-color: #F5F6FF;
+    color: #505050;
+    border-radius: 1.5rem;
+    border: 2px solid #00000020;
+    padding: .5rem 1.5rem;
+    font-size: .9rem;
+    font-weight: 500;
+    font-family: IRANSansFaNum, sans-serif;
+    z-index: 10;
+}
+
+.contentCollapse-talkToTheOrganizer .messages {
+    overflow-y: scroll;
+    transform: rotate(180deg);
+    height: 27rem;
+    padding-top: 6rem;
+    scrollbar-color: #FF0077 #fff;
+    scrollbar-width: thin;
+}
+
+.contentCollapse-talkToTheOrganizer .messages::-webkit-scrollbar {
+    width: 9px !important;
+    background-color: #ffffff !important;
+    right: 0 !important;
+}
+
+.contentCollapse-talkToTheOrganizer .messages::-webkit-scrollbar-thumb {
+    background-color: #FF0077 !important;
+    border-radius: 1.5rem !important;
+}
+
+.contentCollapse-talkToTheOrganizer .messages::-webkit-scrollbar-track {
+    background-color: #ffffff !important;
+    border-radius: 1.5rem !important;
+}
+
+.messageOrganizer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 1rem 2rem;
+    transform: rotate(180deg);
+}
+
+.messageUser {
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 1rem 2rem;
+}
+
+.contentCollapse-talkToTheOrganizer .bg-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 3px .75rem 0 #00000020;
+    margin-right: .75rem;
+}
+
+.contentCollapse-talkToTheOrganizer .messageUser .bg-avatar {
+    margin-left: .75rem;
+}
+
+.contentCollapse-talkToTheOrganizer .massageText {
+    background-color: #fff;
+    border-radius: 1.5rem 1.5rem 1.5rem 0;
+    padding: .75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #919191;
+    line-height: 1.75rem;
+    max-width: 41rem;
+}
+
+.contentCollapse-talkToTheOrganizer .messageUser .massageText {
+    border-radius: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.contentCollapse-talkToTheOrganizer .massageText .MessageTime {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    font-family: IRANSansFaNum, sans-serif;
+}
+
+.contentCollapse-talkToTheOrganizer .messageUser .massageText .MessageTime {
+    justify-content: flex-end;
+}
+
+.contentCollapse-talkToTheOrganizer .massageText .MessageTime svg {
+    margin-left: .5rem;
+}
+
+.box-inputAndButton {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-top: 1px solid #00000030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-inputAndButton input {
+    padding: 1.5rem 2rem;
+    border: none !important;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #8E8E8E80 !important;
+    background-color: #fff !important;
+}
+
+.box-inputAndButton button {
+    background-color: #FF0077;
+    color: #fff !important;
+    border-radius: .5rem;
+    font-size: 1.25rem;
+    width: 8rem !important;
+}
+
+/*                  support page styles                    */
+.item-frequently-asked-questions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 3rem 1.8rem 4rem;
+    cursor: pointer;
+}
+
+.item-frequently-asked-questions span {
+    color: #343434;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.item-frequently-asked-questions svg {
+    color: #FF0077;
+    font-size: 1.75rem;
+}
+
+.question-frequently-asked-questions {
+    background-color: #fff;
+    border-top: 1px solid #00000020;
+    width: 60%;
+}
+
+.question-frequently-asked-questions .levels-frequently-asked-questions {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.question-frequently-asked-questions .levels-frequently-asked-questions .question {
+    color: #707070;
+    font-size: 1.25rem;
+    font-weight: 550;
+}
+
+.bg-AnswerQuestion {
+    padding: 1.75rem 3rem 1.5rem 4.5rem;
+}
+
+.AnswerQuestion .title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #505050;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.AnswerQuestion a {
+    background-color: #FF0077;
+    border-radius: 0.5rem;
+    font-size: 1.35rem;
+    color: #fff !important;
+    max-width: 13rem;
+    padding: .5rem 1rem;
+    font-weight: 500;
+    max-height: 3rem;
+    display: flex;
+    margin-bottom: 2.75rem;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.AnswerQuestion .contactUs {
+    font-size: 1rem;
+    font-family: IranSansFaNum, sans-serif;
+    font-weight: 600;
+    color: #919191;
+}
+
+/*                  Transactions page styles                    */
+
+header .parent-inputSearchHeader {
+    position: relative;
+    width: 14rem;
+}
+
+header .inputSearchHeader {
+    position: relative;
+    background-color: #fff;
+    padding: 0.25rem 1.5rem;
+    border-radius: .5rem !important;
+    border: none;
+    height: 2.75rem;
+}
+
+header .inputSearchHeader::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    color: #CCCCCC;
+}
+
+header .inputSearchHeader-icon {
+    position: absolute;
+    top: .85rem;
+    left: .75rem;
+    cursor: pointer;
+}
+
+
+table .toman {
+    font-size: 10px;
+}
+
+.table-responsive {
+    border-radius: 1rem;
+    box-shadow: 0 3px 0.75rem 0 #00000020;
+    margin-bottom: 2rem;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table td, .table th {
+    padding: 1.25rem .25rem;
+}
+
+table thead {
+    background-color: #FF0077;
+    color: #fff;
+}
+
+table thead th {
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #E4E4E490;
+}
+
+table tbody {
+    background-color: #fff;
+    font-family: IranSansFaNum, sans-serif;
+    padding: 1rem 0;
+}
+
+table tbody td {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    color: #919191;
+}
+
+/*                  Discount codes page styles                    */
+
+
+.DefineANewDiscountCode {
+    overflow: hidden;
+    background-color: #fff !important;
+    border-radius: .75rem;
+    box-shadow: 0 3px 1rem 0 #70707020 !important;
+}
+
+.item-DefineANewDiscountCode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 3rem 1.2rem 4rem;
+    cursor: pointer;
+}
+
+.item-DefineANewDiscountCode span {
+    color: #343434;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.item-DefineANewDiscountCode svg {
+    color: #FF0077;
+    font-size: 1.5rem;
+}
+
+.Content-item-DefineANewDiscountCode {
+    background-color: #F5F6FF;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+#form-DiscountCodesPage input, #form-DiscountCodesPage select {
+    height: 4.25rem !important;
+}
+
+#form-DiscountCodesPage .form-group {
+    margin: 0;
+}
+
+#form-DiscountCodesPage #arrow-bottom {
+    top: 2.9rem;
+}
+
+#form-DiscountCodesPage #Description-DiscountCodesPage {
+    background-color: #ffffff !important;
+    height: 6.5rem !important;
+}
+
+.card-DiscountCodesPage {
+    background-color: #fff;
+    border-radius: .75rem;
+    padding: 1.5rem 2rem 1.8rem 2.5rem;
+}
+
+#MinimumInvoiceAmount, #MaximumDiscountAmount {
+    padding-left: 6rem !important;
+}
+
+.card-DiscountCodesPage .inputGroupPrepend {
+    position: absolute;
+    top: 3.25rem;
+    left: 3rem;
+    color: #9C9C9C;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.table-DiscountPage tbody td:nth-of-type(2), .table-DiscountPage tbody td:nth-of-type(3) {
+    min-width: 14rem;
+}
+
+.table-DiscountPage thead th:nth-of-type(7) {
+    min-width: 12rem;
+}
+
+.table-DiscountPage .table td, .table th {
+    padding: 1.25rem .25rem .75rem .25rem;
+}
+
+.table-DiscountPage table tbody td:nth-of-type(6) {
+    color: #00E14D;
+}
+
+.table-DiscountPage table tbody td:nth-of-type(6).end {
+    color: #FD1D1D;
+}
+
+.table-DiscountPage table tbody td:nth-of-type(8) a {
+    padding: 0;
+}
+
+.table-DiscountPage table tbody td:nth-of-type(8) svg {
+    width: 1.9rem;
+    height: 1.1rem;
+}
+
+
+/*                  Archive of user comments page styles                    */
+
+.table-ArchiveOfUserCommentsPage.table-responsive {
+    border-radius: 1rem;
+    box-shadow: 0 3px 0.75rem 0 #00000020;
+    margin-bottom: 2rem;
+}
+
+.table-ArchiveOfUserCommentsPage .table {
+    margin-bottom: 0;
+}
+
+.table-ArchiveOfUserCommentsPage table thead {
+    background-color: #FF0077;
+    color: #fff;
+}
+
+.table-ArchiveOfUserCommentsPage table thead th {
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 1.1rem 0;
+}
+
+.table-ArchiveOfUserCommentsPage table thead th:nth-of-type(1) {
+    min-width: 5rem;
+    text-align: left;
+}
+
+.table-ArchiveOfUserCommentsPage table thead th:nth-of-type(2) {
+    width: 36rem;
+    min-width: 15rem;
+}
+
+.table-ArchiveOfUserCommentsPage table thead th:nth-of-type(3) {
+    width: 6rem;
+}
+
+.table-ArchiveOfUserCommentsPage table thead th:nth-of-type(4) {
+    width: 11rem;
+}
+
+.table-ArchiveOfUserCommentsPage table thead th:nth-of-type(5) {
+    width: 30rem;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody {
+    background-color: #fff;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody tr:nth-of-type(even) {
+    background-color: #F5F6FF;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td {
+    text-align: center;
+    text-align: -webkit-center;
+    font-family: IranSansFaNum, sans-serif;
+    padding: 2rem 0;
+    color: #919191;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(1) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.3rem;
+    padding-left: .75rem;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(1) input {
+    width: 1rem;
+    height: 1rem;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(2) {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: start;
+    line-height: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(3) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(3) button {
+    color: #fff;
+    max-width: 1.25rem;
+    height: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .25rem;
+}
+
+.table-ArchiveOfUserCommentsPage td:nth-of-type(3) button:active, .table-ArchiveOfUserCommentsPage td:nth-of-type(3) button:focus {
+    opacity: .9;
+    pointer-events: none;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(3) .btn-check {
+    background-color: #71CE91;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(3) .btn-close {
+    background-color: #FF8080;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(3) svg {
+    width: .75rem;
+    min-width: .75rem;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(4) {
+    color: #415CE7;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding-left: 1.05rem;
+    padding-right: 1.05rem;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(5) {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: start;
+    line-height: 1.5rem;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(5) .commentShow {
+    font-size: .9rem;
+    color: #415CE7;
+    display: flex;
+    justify-content: center;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(6) {
+    min-width: 8rem !important;
+    padding-top: 1.5rem;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(6) button {
+    padding: .375rem .25rem;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(6) svg {
+    width: 1.3rem;
+    height: 1.3rem;
+    color: #f07;
+}
+
+.table-ArchiveOfUserCommentsPage table tbody td:nth-of-type(6) button:nth-of-type(2) svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+/*                  Payment list page styles                    */
+
+.boxBills {
+    padding: 3rem;
+}
+
+.boxBills .YourAccountBalance {
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: #707070;
+    margin-bottom: 0;
+    margin-left: .75rem;
+}
+
+.boxBills .YourAccountBalanceNumber {
+    background-color: #F5F5F5;
+    border-radius: 1.5rem;
+    padding: .1rem 2rem;
+    font-size: 1.65rem;
+    font-weight: 600;
+    font-family: IRANSansFaNum, sans-serif;
+    color: #343434;
+    margin: 0 .25rem;
+}
+
+.NumberOfTicketsSold {
+    font-family: IRANSansFaNum, sans-serif;
+    font-weight: 600;
+}
+
+.boxBills .ViewEventList {
+    font-size: .8rem;
+    font-weight: 600;
+    color: #415CE7;
+}
+
+.boxBills .btn-TransferToYourAccount {
+    background-color: #FF0077;
+    color: #fff !important;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    width: 13.5rem;
+    border: none;
+    padding: 7px;
+    outline: none !important;
+    margin-top: 2.5rem;
+}
+
+#ShabaNumber {
+    direction: ltr;
+}
+
+/*                  Followers page styles                    */
+
+header .bg-followsNumber {
+    background-color: white;
+    color: #8E8E8E;
+    border-radius: .5rem;
+    padding: .25rem 1rem;
+    margin: 0 1.75rem;
+    height: 2.75rem;
+    font-size: 1.15rem;
+    font-family: IRANSansFaNum, sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.follower {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 .75rem 0 #00000015;
+    padding: .3rem 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.follower .checkBOxAndAvatarAndName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.follower .checkBOxAndAvatarAndName input {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.follower .checkBOxAndAvatarAndName .bg-avatar-follower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    margin: 0 1.5rem;
+}
+
+.follower .checkBOxAndAvatarAndName .firstNameAndLastName {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #727272;
+}
+
+.follower .NumberOfEventsAttended {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #727272;
+}
+
+.follower .NumberOfEventsAttended .number {
+    font-family: IRANSansFaNum, sans-serif;
+    font-weight: 600;
+}
+
+.follower .buttons-sendMessageAndViewComments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.follower .buttons-sendMessageAndViewComments a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px .4rem 0 #00000015;
+    border-radius: .75rem;
+    color: #FF0077;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.follower .btn-sendMessage {
+    padding: .375rem 1rem;
+    margin: 0 .75rem;
+}
+
+/*                  events page styles                    */
+
+.table-eventsPage.table-responsive {
+    border-radius: 1rem;
+    box-shadow: 0 3px 0.75rem 0 #00000020;
+    margin-bottom: 2rem;
+}
+
+.table-eventsPage .table {
+    margin-bottom: 0;
+}
+
+.table-eventsPage table thead {
+    background-color: #FF0077;
+    color: #fff;
+}
+
+.table-eventsPage table thead th {
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 1.1rem 0;
+}
+
+.table-eventsPage table thead th:nth-of-type(1) {
+    min-width: 3.5rem;
+    text-align: left;
+}
+
+.table-eventsPage table tbody tr:nth-of-type(even) {
+    background-color: #F5F6FF;
+}
+
+.table-eventsPage table tbody td:nth-of-type(1) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.table-eventsPage table tbody td:nth-of-type(1) input {
+    width: 1rem;
+    height: 1rem;
+}
+
+.table-eventsPage table tbody td:nth-of-type(8) {
+    color: #71CE91;
+}
+
+.table-eventsPage table tbody td:nth-of-type(8).end {
+    color: #FD1D1D;
+}
+
+/*                  events page styles                    */
+
+
+.card-SaleStatisticsPage {
+    background-color: white;
+    border-radius: .75rem;
+    overflow: hidden;
+    padding: 1rem 3rem;
+}
+
+.header-card-SaleStatisticsPage {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: .5rem;
+}
+
+.header-card-SaleStatisticsPage h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #727272;
+}
+
+header .box-selectorSaleStatisticsPage {
+    position: relative;
+}
+
+header .box-selectorSaleStatisticsPage select {
+    background-color: white !important;
+    color: #646464 !important;
+    font-size: 1.1rem !important;
+    margin: 0 1rem 0 0 !important;
+    padding: .75rem .75rem .75rem 2.5rem !important;
+    height: 2.75rem !important;
+    border-radius: .5rem !important;
+    box-shadow: 0 3px .25rem 0 #00000015 !important;
+}
+
+header .box-selectorSaleStatisticsPage select option {
+    color: #646464;
+}
+
+header .box-selectorSaleStatisticsPage .bg-iconAngleDown {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    border-right: 1px solid #00000020;
+    padding-right: .5rem;
+    pointer-events: none;
+}
+
+header .box-selectorSaleStatisticsPage .bg-iconAngleDown svg path {
+    color: #FF0077;
+    font-size: 1.1rem;
+    margin-left: 8px;
+}
+
+#myChart-bar {
+}
+
+/*                  file management page styles                    */
+
+.description {
+    font-size: 20px;
+    font-weight: 500;
+    color: #828282;
+    margin: 0 3rem 3.25rem;
+    line-height: 1.75rem;
+}
+
+.allFiles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -19px;
+}
+
+.allFiles > * {
+    flex: 0;
+    margin: 19px;
+}
+
+.file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-fileSvg {
+    background-color: white;
+    border-radius: .75rem;
+    box-shadow: 0 3px 1rem 0 #00000015;
+    padding: .5rem 1rem 1rem;
+    margin-bottom: 1.75rem;
+}
+
+.fileName {
+    font-size: 20px;
+    font-weight: 500;
+    color: #343434;
+}
+
+
+/*                  file management page styles                    */
+
+header .box-selectorInternalFileManagementPage {
+    position: relative;
+}
+
+header .box-selectorInternalFileManagementPage select {
+    background-color: white !important;
+    color: #828282 !important;
+    font-size: 1.3rem !important;
+    padding: .25rem .75rem .25rem 2.5rem !important;
+    height: 2.75rem !important;
+    border-radius: .5rem !important;
+    box-shadow: 0 2px .5rem 0 #00000015 !important;
+}
+
+header .box-selectorInternalFileManagementPage select option {
+    color: #646464;
+}
+
+header .box-selectorInternalFileManagementPage .bg-iconAngleDown {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    pointer-events: none;
+}
+
+header .box-selectorInternalFileManagementPage .bg-iconAngleDown svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+header .box-selectorInternalFileManagementPage .bg-iconAngleDown svg path {
+    color: #FF0077;
+}
+
+/*                  Internal File Management page styles                    */
+
+header .btn-Simple-selectorInternalFileManagementPage {
+    display: flex;
+    align-items: center;
+    height: 2.75rem !important;
+    background-color: #fff !important;
+    color: #646464 !important;
+    border-radius: .5rem !important;
+    padding: .375rem 1rem !important;
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+    margin-right: 1rem;
+    white-space: nowrap;
+}
+
+.table-InternalFileManagement.table-responsive {
+    border-radius: 1.5rem;
+    box-shadow: 0 3px 0.75rem 0 #00000020;
+    margin-bottom: 2rem;
+}
+
+.table-InternalFileManagement .table {
+    margin-bottom: 0;
+}
+
+.table-InternalFileManagement table thead {
+    background-color: #FF0077;
+    color: #fff;
+}
+
+.table-InternalFileManagement table thead th {
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1.75rem 0;
+}
+
+.table-InternalFileManagement table thead th:nth-of-type(1) {
+    width: 6rem;
+    text-align: end;
+}
+
+.table-InternalFileManagement table thead th:nth-of-type(2) {
+    width: 24rem;
+}
+
+.table-InternalFileManagement table thead th:nth-of-type(3) {
+    width: 5rem;
+}
+
+.table-InternalFileManagement table thead th:nth-of-type(4) {
+    width: 20rem;
+}
+
+.table-InternalFileManagement table thead th:nth-of-type(5) {
+    width: 8rem;
+}
+
+.table-InternalFileManagement table thead th:nth-of-type(6) {
+    width: 7rem;
+    min-width: 7rem;
+}
+
+.table-InternalFileManagement table tbody td {
+    padding: 1.4rem 0;
+    font-size: 1.3rem;
+    vertical-align: middle;
+    letter-spacing: 1px;
+}
+
+.table-InternalFileManagement table tbody tr:nth-of-type(even) {
+    background-color: #E2E2E2;
+}
+
+.table-InternalFileManagement table tbody td:nth-of-type(1) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.table-InternalFileManagement table tbody td:nth-of-type(1) input {
+    width: 1rem;
+    height: 1rem;
+}
+
+.table-InternalFileManagement table tbody td:nth-of-type(6) button {
+    padding: 0;
+}
+
+.table-InternalFileManagement table tbody td:nth-of-type(6) button:nth-of-type(1) svg {
+    width: 1.25rem;
+    height: 1rem;
+}
+
+.table-InternalFileManagement table tbody td:nth-of-type(6) button:nth-of-type(2) svg {
+    width: 1.3rem;
+    height: 1.5rem;
+    margin-right: .5rem;
+}
+
+.table-InternalFileManagement table tbody td:nth-of-type(6) button svg path {
+    fill: #828282;
+}
+
+
+/*                  media queries                    */
+
+@media (max-width: 1200px) {
+    #partLeft {
+        width: 72%;
+    }
+
+    .item-TicketDefinition .timeAndBtn-SelectAPlan-part {
+        width: 100%;
+    }
+
+    .line-pertRight-eventCoverChooseBox {
+        line-height: 1.75rem;
+    }
+
+    .boxBills {
+        padding: 3rem 1rem;
+    }
+
+    .table-eventsPage table thead th:nth-of-type(2) {
+        min-width: 12rem;
+    }
+
+    .table-eventsPage table thead th:nth-of-type(3), .table-eventsPage table thead th:nth-of-type(8), .table-eventsPage table thead th:nth-of-type(4), .table-eventsPage table thead th:nth-of-type(5), .table-eventsPage table thead th:nth-of-type(6) {
+        min-width: 8rem;
+    }
+
+    .table-ArchiveOfUserCommentsPage table thead th:nth-of-type(2), .table-ArchiveOfUserCommentsPage table thead th:nth-of-type(5) {
+        min-width: 15rem;
+    }
+
+    .table-ArchiveOfUserCommentsPage table thead th:nth-of-type(4) {
+        min-width: 8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #mainHeader {
+        padding: .75rem 0 .75rem 0;
+    }
+
+    #mainHeader .list a {
+        width: 1rem;
+        height: 2rem;
+        justify-content: center;
+    }
+
+    #mainHeader .list a span {
+        display: none;
+    }
+
+    #mainHeader .search-icon {
+        width: 15px;
+    }
+
+    #mainHeader .siteLogo span {
+        font-size: 25px;
+    }
+
+    #partLeft {
+        width: 100%;
+    }
+
+    .file-upload-btn {
+        margin: 0 0 1rem 0;
+    }
+
+    .btn-RecordInformationAndContinue {
+        margin-right: 0;
+    }
+
+    header .btn-DefineANewSalon {
+        font-size: .85rem;
+    }
+
+    .SalonServices {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .SalonServices .item-SelectedHalls {
+        margin: 0 0 1.5rem 0;
+    }
+
+    .file-upload {
+        margin-top: 2rem !important;
+    }
+
+    .boxBills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxBills .YourAccountBalance {
+        line-height: 3rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .allFiles {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .item-TicketDefinition {
+        flex-direction: column;
+    }
+
+    .item-TicketDefinition .inputs {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .item-TicketDefinition .btn-SelectAPlan-part {
+        justify-content: flex-end;
+        padding: 0 !important;
+    }
+
+    .Specifications-label {
+        margin-right: 0 !important;
+    }
+
+    .follower {
+        padding-top: 1.5rem;
+        justify-content: center;
+    }
+
+    header .btn-Simple {
+        font-size: .85rem !important;
+    }
+
+    .description {
+        font-size: 16px;
+        margin: 0 auto 3rem auto;
+    }
+
+    .follower .NumberOfEventsAttended {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #partLeft .content-card-DashboardOrganizer {
+        flex-direction: column;
+    }
+
+    #partLeft .averageScoreAndTotalNumberOfVoters {
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    #partLeft .commentUser .likeAndDislike {
+        margin: 0;
+    }
+
+    header h2 {
+        font-size: 16px;
+    }
+
+    header #btn-delete, header select {
+        font-size: .85rem !important;
+    }
+
+    .list-group-item {
+        width: 6rem;
+        font-size: .85rem !important;
+    }
+
+    .avatarAndTexts-item-notification .texts .title-item-notification {
+        font-size: 1.1rem;
+    }
+
+    .item-TicketDefinition .timeAndBtn-SelectAPlan-part {
+        flex-direction: column;
+        align-items: start !important;
+    }
+
+    .row-TicketDefinition .dateBox-TicketDefinition {
+        margin: 0 .5rem;
+    }
+
+    .row-TicketDefinition .dateBox-TicketDefinition #dateInput-TicketDefinition, .row-TicketDefinition .btn-AddAChance, .btn-AddAChance {
+        font-size: .9rem;
+    }
+
+    .item-TicketDefinition .time, .item-TicketDefinition .btn-SelectAPlan-part {
+        width: 100%;
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+
+    .drag-svg svg {
+        width: 10rem;
+        height: 9rem;
+    }
+
+    table tbody td:nth-of-type(1), table tbody td:nth-of-type(2), table tbody td:nth-of-type(3) {
+        min-width: 6rem;
+    }
+
+    table tbody td:nth-of-type(4), table tbody td:nth-of-type(5) {
+        min-width: 10rem;
+    }
+
+    header .bg-followsNumber {
+        font-size: .85rem;
+        margin: 0 .5rem;
+    }
+
+    header .box-selectorInternalFileManagementPage select {
+        font-size: .85rem !important;
+        padding: .25rem .75rem .25rem 1.5rem !important;
+    }
+
+    header .btn-Simple-selectorInternalFileManagementPage {
+        font-size: .85rem !important;
+    }
+
+    .AnswerQuestion .contactUs {
+        line-height: 1.75rem;
+    }
+
+    .item-frequently-asked-questions span {
+        line-height: 2.5rem;
+    }
+}
